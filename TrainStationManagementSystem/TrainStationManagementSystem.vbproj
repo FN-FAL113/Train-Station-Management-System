@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{291F3A65-B1AD-408C-A545-D17C5FD9CEBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OrbetaActivity4.My.MyApplication</StartupObject>
+    <RootNamespace>OrbetaActivity4</RootNamespace>
+    <AssemblyName>TrainStationManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TrainStationManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TrainStationManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\MySql.Data\v4.0_8.0.32.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBUtils.vb" />
+    <Compile Include="Destinations\DestinationMenu.Designer.vb">
+      <DependentUpon>DestinationMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Destinations\DestinationMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destinations\Forms\AddDestinationForm.Designer.vb">
+      <DependentUpon>AddDestinationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Destinations\Forms\AddDestinationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destinations\Forms\DeleteDestinationForm.Designer.vb">
+      <DependentUpon>DeleteDestinationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Destinations\Forms\DeleteDestinationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destinations\Forms\UpdateDestinationForm.Designer.vb">
+      <DependentUpon>UpdateDestinationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Destinations\Forms\UpdateDestinationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseModule.vb" />
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Passengers\Forms\AddPassengerForm.Designer.vb">
+      <DependentUpon>AddPassengerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passengers\Forms\AddPassengerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passengers\Forms\DeletePassengerForm.Designer.vb">
+      <DependentUpon>DeletePassengerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passengers\Forms\DeletePassengerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passengers\PassengerMenu.Designer.vb">
+      <DependentUpon>PassengerMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passengers\PassengerMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passengers\Forms\UpdatePassengerForm.Designer.vb">
+      <DependentUpon>UpdatePassengerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passengers\Forms\UpdatePassengerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsMenu.Designer.vb">
+      <DependentUpon>ReportsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Views\DestinationFeeView.Designer.vb">
+      <DependentUpon>DestinationFeeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Views\DestinationFeeView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Views\OngoingTrainView.Designer.vb">
+      <DependentUpon>OngoingTrainView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Views\OngoingTrainView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Views\TrainPassengerView.Designer.vb">
+      <DependentUpon>TrainPassengerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Views\TrainPassengerView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Forms\AddTicketForm.Designer.vb">
+      <DependentUpon>AddTicketForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Forms\AddTicketForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Forms\DeleteTicketForm.Designer.vb">
+      <DependentUpon>DeleteTicketForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Forms\DeleteTicketForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\TicketMenu.Designer.vb">
+      <DependentUpon>TicketMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\TicketMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets\Forms\UpdateTicketForm.Designer.vb">
+      <DependentUpon>UpdateTicketForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Forms\UpdateTicketForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\AddTrainOperatorForm.Designer.vb">
+      <DependentUpon>AddTrainOperatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\AddTrainOperatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\DeleteTrainOperatorForm.Designer.vb">
+      <DependentUpon>DeleteTrainOperatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\DeleteTrainOperatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\UpdateTrainOperatorForm.Designer.vb">
+      <DependentUpon>UpdateTrainOperatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainOperators\Forms\UpdateTrainOperatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainOperators\TrainOperatorMenu.Designer.vb">
+      <DependentUpon>TrainOperatorMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainOperators\TrainOperatorMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains\Forms\AddTrainForm.Designer.vb">
+      <DependentUpon>AddTrainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\Forms\AddTrainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains\Forms\DeleteTrainForm.Designer.vb">
+      <DependentUpon>DeleteTrainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\Forms\DeleteTrainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains\Forms\UpdateTrainForm.Designer.vb">
+      <DependentUpon>UpdateTrainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\Forms\UpdateTrainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains\TrainMenu.Designer.vb">
+      <DependentUpon>TrainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\TrainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Destinations\DestinationMenu.resx">
+      <DependentUpon>DestinationMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destinations\Forms\AddDestinationForm.resx">
+      <DependentUpon>AddDestinationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destinations\Forms\DeleteDestinationForm.resx">
+      <DependentUpon>DeleteDestinationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destinations\Forms\UpdateDestinationForm.resx">
+      <DependentUpon>UpdateDestinationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers\Forms\AddPassengerForm.resx">
+      <DependentUpon>AddPassengerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers\Forms\DeletePassengerForm.resx">
+      <DependentUpon>DeletePassengerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers\PassengerMenu.resx">
+      <DependentUpon>PassengerMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers\Forms\UpdatePassengerForm.resx">
+      <DependentUpon>UpdatePassengerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportsMenu.resx">
+      <DependentUpon>ReportsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Views\DestinationFeeView.resx">
+      <DependentUpon>DestinationFeeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Views\OngoingTrainView.resx">
+      <DependentUpon>OngoingTrainView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Views\TrainPassengerView.resx">
+      <DependentUpon>TrainPassengerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Forms\AddTicketForm.resx">
+      <DependentUpon>AddTicketForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Forms\DeleteTicketForm.resx">
+      <DependentUpon>DeleteTicketForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\TicketMenu.resx">
+      <DependentUpon>TicketMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets\Forms\UpdateTicketForm.resx">
+      <DependentUpon>UpdateTicketForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainOperators\Forms\AddTrainOperatorForm.resx">
+      <DependentUpon>AddTrainOperatorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainOperators\Forms\DeleteTrainOperatorForm.resx">
+      <DependentUpon>DeleteTrainOperatorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainOperators\Forms\UpdateTrainOperatorForm.resx">
+      <DependentUpon>UpdateTrainOperatorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainOperators\TrainOperatorMenu.resx">
+      <DependentUpon>TrainOperatorMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\Forms\AddTrainForm.resx">
+      <DependentUpon>AddTrainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\Forms\DeleteTrainForm.resx">
+      <DependentUpon>DeleteTrainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\Forms\UpdateTrainForm.resx">
+      <DependentUpon>UpdateTrainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\TrainMenu.resx">
+      <DependentUpon>TrainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\station.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sign-up-icon-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
