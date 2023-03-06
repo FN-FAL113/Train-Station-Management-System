@@ -1,2 +1,2 @@
 # Train-Station-Management-System
-VB.Net application as my output for Event Driven Programming
+My source code for my output on course subject: ```IT120: Event Driven Programming```
