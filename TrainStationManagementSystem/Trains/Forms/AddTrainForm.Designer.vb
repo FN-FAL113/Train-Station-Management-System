@@ -37,99 +37,112 @@ Partial Class AddTrainForm
         '
         'TrainIsOngoingTextBox
         '
-        Me.TrainIsOngoingTextBox.Location = New System.Drawing.Point(196, 115)
+        Me.TrainIsOngoingTextBox.Location = New System.Drawing.Point(198, 108)
         Me.TrainIsOngoingTextBox.Name = "TrainIsOngoingTextBox"
-        Me.TrainIsOngoingTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainIsOngoingTextBox.Size = New System.Drawing.Size(158, 23)
         Me.TrainIsOngoingTextBox.TabIndex = 47
         '
         'AddButton
         '
-        Me.AddButton.Location = New System.Drawing.Point(196, 174)
+        Me.AddButton.BackColor = System.Drawing.Color.Plum
+        Me.AddButton.Location = New System.Drawing.Point(202, 156)
         Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(126, 51)
+        Me.AddButton.Size = New System.Drawing.Size(126, 48)
         Me.AddButton.TabIndex = 46
         Me.AddButton.Text = "Add Train"
-        Me.AddButton.UseVisualStyleBackColor = True
+        Me.AddButton.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(371, 26)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(371, 24)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(82, 17)
+        Me.Label6.Size = New System.Drawing.Size(104, 20)
         Me.Label6.TabIndex = 45
         Me.Label6.Text = "Train Name"
         '
         'TrainNameTextBox
         '
-        Me.TrainNameTextBox.Location = New System.Drawing.Point(371, 49)
+        Me.TrainNameTextBox.Location = New System.Drawing.Point(371, 46)
         Me.TrainNameTextBox.Name = "TrainNameTextBox"
-        Me.TrainNameTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainNameTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TrainNameTextBox.TabIndex = 44
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(196, 26)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(198, 24)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(96, 17)
+        Me.Label5.Size = New System.Drawing.Size(125, 20)
         Me.Label5.TabIndex = 43
         Me.Label5.Text = "Destination ID"
         '
         'TrainDestinationIdTextBox
         '
-        Me.TrainDestinationIdTextBox.Location = New System.Drawing.Point(196, 49)
+        Me.TrainDestinationIdTextBox.Location = New System.Drawing.Point(198, 46)
         Me.TrainDestinationIdTextBox.Name = "TrainDestinationIdTextBox"
-        Me.TrainDestinationIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainDestinationIdTextBox.Size = New System.Drawing.Size(158, 23)
         Me.TrainDestinationIdTextBox.TabIndex = 42
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 92)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(31, 86)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(119, 17)
+        Me.Label3.Size = New System.Drawing.Size(152, 20)
         Me.Label3.TabIndex = 41
         Me.Label3.Text = "Train Operator ID"
         '
         'TrainOperatorIdTextBox
         '
-        Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 115)
+        Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 108)
         Me.TrainOperatorIdTextBox.Name = "TrainOperatorIdTextBox"
-        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(152, 23)
         Me.TrainOperatorIdTextBox.TabIndex = 40
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(196, 92)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(198, 86)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 17)
+        Me.Label2.Size = New System.Drawing.Size(158, 20)
         Me.Label2.TabIndex = 39
         Me.Label2.Text = "Is Ongoing (0 or 1)"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 26)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(31, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "ID"
         '
         'TrainIdTextBox
         '
-        Me.TrainIdTextBox.Location = New System.Drawing.Point(31, 49)
+        Me.TrainIdTextBox.Location = New System.Drawing.Point(31, 46)
         Me.TrainIdTextBox.Name = "TrainIdTextBox"
-        Me.TrainIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainIdTextBox.Size = New System.Drawing.Size(152, 23)
         Me.TrainIdTextBox.TabIndex = 37
         '
         'AddTrainForm
         '
         Me.AcceptButton = Me.AddButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(530, 250)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(530, 234)
         Me.Controls.Add(Me.TrainIsOngoingTextBox)
         Me.Controls.Add(Me.AddButton)
         Me.Controls.Add(Me.Label6)
@@ -141,6 +154,10 @@ Partial Class AddTrainForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TrainIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "AddTrainForm"
         Me.Text = "AddTrainForm"
         Me.ResumeLayout(False)

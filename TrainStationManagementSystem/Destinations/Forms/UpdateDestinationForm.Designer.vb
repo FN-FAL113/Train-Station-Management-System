@@ -33,67 +33,76 @@ Partial Class UpdateDestinationForm
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(150, 263)
+        Me.UpdateButton.BackColor = System.Drawing.Color.Plum
+        Me.UpdateButton.Location = New System.Drawing.Point(148, 229)
         Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(126, 51)
+        Me.UpdateButton.Size = New System.Drawing.Size(126, 48)
         Me.UpdateButton.TabIndex = 40
         Me.UpdateButton.Text = "Update Destination"
-        Me.UpdateButton.UseVisualStyleBackColor = True
+        Me.UpdateButton.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(133, 164)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(133, 152)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(32, 17)
+        Me.Label6.Size = New System.Drawing.Size(39, 20)
         Me.Label6.TabIndex = 39
         Me.Label6.Text = "Fee"
         '
         'DestinationFeeTextBox
         '
-        Me.DestinationFeeTextBox.Location = New System.Drawing.Point(133, 187)
+        Me.DestinationFeeTextBox.Location = New System.Drawing.Point(133, 175)
         Me.DestinationFeeTextBox.Name = "DestinationFeeTextBox"
-        Me.DestinationFeeTextBox.Size = New System.Drawing.Size(158, 22)
+        Me.DestinationFeeTextBox.Size = New System.Drawing.Size(158, 23)
         Me.DestinationFeeTextBox.TabIndex = 38
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(133, 99)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(133, 91)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(120, 17)
+        Me.Label5.Size = New System.Drawing.Size(155, 20)
         Me.Label5.TabIndex = 37
         Me.Label5.Text = "Destination Name"
         '
         'DestinationNameTextBox
         '
-        Me.DestinationNameTextBox.Location = New System.Drawing.Point(133, 122)
+        Me.DestinationNameTextBox.Location = New System.Drawing.Point(133, 114)
         Me.DestinationNameTextBox.Name = "DestinationNameTextBox"
-        Me.DestinationNameTextBox.Size = New System.Drawing.Size(158, 22)
+        Me.DestinationNameTextBox.Size = New System.Drawing.Size(158, 23)
         Me.DestinationNameTextBox.TabIndex = 36
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(133, 32)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(133, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "ID"
         '
         'DestinationIdTextBox
         '
-        Me.DestinationIdTextBox.Location = New System.Drawing.Point(133, 55)
+        Me.DestinationIdTextBox.Location = New System.Drawing.Point(133, 52)
         Me.DestinationIdTextBox.Name = "DestinationIdTextBox"
-        Me.DestinationIdTextBox.Size = New System.Drawing.Size(158, 22)
+        Me.DestinationIdTextBox.Size = New System.Drawing.Size(158, 23)
         Me.DestinationIdTextBox.TabIndex = 34
         '
         'UpdateDestinationForm
         '
         Me.AcceptButton = Me.UpdateButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(425, 346)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(425, 324)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.DestinationFeeTextBox)
@@ -101,6 +110,10 @@ Partial Class UpdateDestinationForm
         Me.Controls.Add(Me.DestinationNameTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DestinationIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "UpdateDestinationForm"
         Me.Text = "UpdateDestinationForm"
         Me.ResumeLayout(False)

@@ -29,38 +29,47 @@ Partial Class DeleteTrainForm
         '
         'DeleteButton
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(111, 111)
+        Me.DeleteButton.BackColor = System.Drawing.Color.Plum
+        Me.DeleteButton.Location = New System.Drawing.Point(111, 104)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(126, 51)
+        Me.DeleteButton.Size = New System.Drawing.Size(126, 48)
         Me.DeleteButton.TabIndex = 33
         Me.DeleteButton.Text = "Delete Train"
-        Me.DeleteButton.UseVisualStyleBackColor = True
+        Me.DeleteButton.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(108, 42)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(108, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 17)
+        Me.Label1.Size = New System.Drawing.Size(74, 20)
         Me.Label1.TabIndex = 32
         Me.Label1.Text = "Train ID"
         '
         'TrainIdTextBox
         '
-        Me.TrainIdTextBox.Location = New System.Drawing.Point(111, 62)
+        Me.TrainIdTextBox.Location = New System.Drawing.Point(111, 58)
         Me.TrainIdTextBox.Name = "TrainIdTextBox"
-        Me.TrainIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainIdTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TrainIdTextBox.TabIndex = 31
         '
         'DeleteTrainForm
         '
         Me.AcceptButton = Me.DeleteButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(348, 204)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(348, 191)
         Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TrainIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "DeleteTrainForm"
         Me.Text = "DeleteTrainForm"
         Me.ResumeLayout(False)

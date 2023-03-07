@@ -37,100 +37,113 @@ Partial Class UpdateTrainOperatorForm
         '
         'TrainOperatorPhoneNumberTextBox
         '
-        Me.TrainOperatorPhoneNumberTextBox.Location = New System.Drawing.Point(196, 115)
+        Me.TrainOperatorPhoneNumberTextBox.Location = New System.Drawing.Point(196, 108)
         Me.TrainOperatorPhoneNumberTextBox.Name = "TrainOperatorPhoneNumberTextBox"
-        Me.TrainOperatorPhoneNumberTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorPhoneNumberTextBox.Size = New System.Drawing.Size(141, 23)
         Me.TrainOperatorPhoneNumberTextBox.TabIndex = 47
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(196, 174)
+        Me.UpdateButton.BackColor = System.Drawing.Color.Plum
+        Me.UpdateButton.Location = New System.Drawing.Point(196, 163)
         Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(126, 51)
+        Me.UpdateButton.Size = New System.Drawing.Size(126, 48)
         Me.UpdateButton.TabIndex = 46
         Me.UpdateButton.Text = "Update Train Operator"
-        Me.UpdateButton.UseVisualStyleBackColor = True
+        Me.UpdateButton.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(371, 26)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(371, 24)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 17)
+        Me.Label6.Size = New System.Drawing.Size(70, 20)
         Me.Label6.TabIndex = 45
         Me.Label6.Text = "Gender"
         '
         'TrainOperatorGenderTextBox
         '
-        Me.TrainOperatorGenderTextBox.Location = New System.Drawing.Point(371, 49)
+        Me.TrainOperatorGenderTextBox.Location = New System.Drawing.Point(371, 46)
         Me.TrainOperatorGenderTextBox.Name = "TrainOperatorGenderTextBox"
-        Me.TrainOperatorGenderTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorGenderTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TrainOperatorGenderTextBox.TabIndex = 44
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(196, 26)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(196, 24)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 43
         Me.Label5.Text = "Name"
         '
         'TrainOperatorNameTextBox
         '
-        Me.TrainOperatorNameTextBox.Location = New System.Drawing.Point(196, 49)
+        Me.TrainOperatorNameTextBox.Location = New System.Drawing.Point(196, 46)
         Me.TrainOperatorNameTextBox.Name = "TrainOperatorNameTextBox"
-        Me.TrainOperatorNameTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorNameTextBox.Size = New System.Drawing.Size(141, 23)
         Me.TrainOperatorNameTextBox.TabIndex = 42
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 92)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(31, 86)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 17)
+        Me.Label3.Size = New System.Drawing.Size(42, 20)
         Me.Label3.TabIndex = 41
         Me.Label3.Text = "Age"
         '
         'TrainOperatorAgeTextBox
         '
-        Me.TrainOperatorAgeTextBox.Location = New System.Drawing.Point(31, 115)
+        Me.TrainOperatorAgeTextBox.Location = New System.Drawing.Point(31, 108)
         Me.TrainOperatorAgeTextBox.Name = "TrainOperatorAgeTextBox"
-        Me.TrainOperatorAgeTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorAgeTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TrainOperatorAgeTextBox.TabIndex = 40
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(196, 92)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(196, 86)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 17)
+        Me.Label2.Size = New System.Drawing.Size(130, 20)
         Me.Label2.TabIndex = 39
         Me.Label2.Text = "Phone Number"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 26)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(31, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "ID"
         '
         'TrainOperatorIdTextBox
         '
-        Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 49)
+        Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 46)
         Me.TrainOperatorIdTextBox.Name = "TrainOperatorIdTextBox"
-        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TrainOperatorIdTextBox.TabIndex = 37
         '
         'UpdateTrainOperatorForm
         '
         Me.AcceptButton = Me.UpdateButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(530, 250)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(530, 234)
         Me.Controls.Add(Me.TrainOperatorPhoneNumberTextBox)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.Label6)
@@ -142,6 +155,10 @@ Partial Class UpdateTrainOperatorForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TrainOperatorIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "UpdateTrainOperatorForm"
         Me.Text = "UpdateTrainOperatorForm"
         Me.ResumeLayout(False)

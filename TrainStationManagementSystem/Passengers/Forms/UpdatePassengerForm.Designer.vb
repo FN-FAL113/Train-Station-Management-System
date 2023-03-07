@@ -35,83 +35,94 @@ Partial Class UpdatePassengerForm
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(184, 178)
+        Me.UpdateButton.BackColor = System.Drawing.Color.Plum
+        Me.UpdateButton.Location = New System.Drawing.Point(190, 165)
         Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(126, 51)
+        Me.UpdateButton.Size = New System.Drawing.Size(126, 48)
         Me.UpdateButton.TabIndex = 33
         Me.UpdateButton.Text = "Update Passenger"
-        Me.UpdateButton.UseVisualStyleBackColor = True
+        Me.UpdateButton.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(79, 90)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(79, 82)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 17)
+        Me.Label6.Size = New System.Drawing.Size(70, 20)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Gender"
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(79, 113)
+        Me.TextBox6.Location = New System.Drawing.Point(79, 106)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(158, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(158, 23)
         Me.TextBox6.TabIndex = 31
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(284, 21)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(284, 18)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Name"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(284, 44)
+        Me.TextBox5.Location = New System.Drawing.Point(284, 41)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(167, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(167, 23)
         Me.TextBox5.TabIndex = 29
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(284, 90)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(284, 82)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 17)
+        Me.Label3.Size = New System.Drawing.Size(42, 20)
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "Age"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(284, 113)
+        Me.TextBox3.Location = New System.Drawing.Point(284, 106)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(167, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(167, 23)
         Me.TextBox3.TabIndex = 27
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(79, 21)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(79, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "ID"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(79, 44)
+        Me.TextBox1.Location = New System.Drawing.Point(79, 41)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(158, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(158, 23)
         Me.TextBox1.TabIndex = 25
         '
         'UpdatePassengerForm
         '
         Me.AcceptButton = Me.UpdateButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(530, 250)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(530, 234)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox6)
@@ -121,6 +132,10 @@ Partial Class UpdatePassengerForm
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "UpdatePassengerForm"
         Me.Text = "UpdatePassengerForm"
         Me.ResumeLayout(False)

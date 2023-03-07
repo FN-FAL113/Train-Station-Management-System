@@ -90,7 +90,7 @@ Partial Class DestinationMenu
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.TrainStationManagementSystem.My.Resources.Resources.destinations
         Me.PictureBox1.Location = New System.Drawing.Point(330, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(73, 66)

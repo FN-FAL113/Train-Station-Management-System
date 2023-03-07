@@ -22,7 +22,6 @@ Partial Class RegisterForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegisterForm))
         Me.RegisterButton = New System.Windows.Forms.Button()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.RegisterPasswordTextBox = New System.Windows.Forms.TextBox()
@@ -127,7 +126,7 @@ Partial Class RegisterForm
         Me.AcceptButton = Me.RegisterButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_Register
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
         Me.Controls.Add(Me.Label1)

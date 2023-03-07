@@ -22,7 +22,6 @@ Partial Class OngoingTrainView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OngoingTrainView))
         Me.OngoingTrainDataGridView = New System.Windows.Forms.DataGridView()
         Me.train_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.train_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -84,7 +83,7 @@ Partial Class OngoingTrainView
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(331, 39)
+        Me.Label1.Location = New System.Drawing.Point(343, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(226, 32)
         Me.Label1.TabIndex = 2
@@ -94,7 +93,7 @@ Partial Class OngoingTrainView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(881, 509)
         Me.Controls.Add(Me.OngoingTrainDataGridView)

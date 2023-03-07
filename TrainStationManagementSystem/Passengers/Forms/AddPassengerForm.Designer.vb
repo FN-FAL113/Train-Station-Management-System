@@ -35,83 +35,94 @@ Partial Class AddPassengerForm
         '
         'AddButton
         '
-        Me.AddButton.Location = New System.Drawing.Point(196, 174)
+        Me.AddButton.BackColor = System.Drawing.Color.Plum
+        Me.AddButton.Location = New System.Drawing.Point(196, 163)
         Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(126, 51)
+        Me.AddButton.Size = New System.Drawing.Size(126, 48)
         Me.AddButton.TabIndex = 24
         Me.AddButton.Text = "Add Passenger"
-        Me.AddButton.UseVisualStyleBackColor = True
+        Me.AddButton.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(91, 86)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(91, 79)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 17)
+        Me.Label6.Size = New System.Drawing.Size(70, 20)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Gender"
         '
         'PassengerGenderTextBox
         '
-        Me.PassengerGenderTextBox.Location = New System.Drawing.Point(91, 109)
+        Me.PassengerGenderTextBox.Location = New System.Drawing.Point(91, 102)
         Me.PassengerGenderTextBox.Name = "PassengerGenderTextBox"
-        Me.PassengerGenderTextBox.Size = New System.Drawing.Size(158, 22)
+        Me.PassengerGenderTextBox.Size = New System.Drawing.Size(158, 23)
         Me.PassengerGenderTextBox.TabIndex = 21
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(296, 17)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(296, 14)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Name"
         '
         'PassengerNameTextBox
         '
-        Me.PassengerNameTextBox.Location = New System.Drawing.Point(296, 40)
+        Me.PassengerNameTextBox.Location = New System.Drawing.Point(296, 38)
         Me.PassengerNameTextBox.Name = "PassengerNameTextBox"
-        Me.PassengerNameTextBox.Size = New System.Drawing.Size(167, 22)
+        Me.PassengerNameTextBox.Size = New System.Drawing.Size(167, 23)
         Me.PassengerNameTextBox.TabIndex = 19
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(296, 86)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(296, 79)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 17)
+        Me.Label3.Size = New System.Drawing.Size(42, 20)
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "Age"
         '
         'PassengerAgeTextBox
         '
-        Me.PassengerAgeTextBox.Location = New System.Drawing.Point(296, 109)
+        Me.PassengerAgeTextBox.Location = New System.Drawing.Point(296, 102)
         Me.PassengerAgeTextBox.Name = "PassengerAgeTextBox"
-        Me.PassengerAgeTextBox.Size = New System.Drawing.Size(167, 22)
+        Me.PassengerAgeTextBox.Size = New System.Drawing.Size(167, 23)
         Me.PassengerAgeTextBox.TabIndex = 17
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(91, 17)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(91, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "ID"
         '
         'PassengerIdTextBox
         '
-        Me.PassengerIdTextBox.Location = New System.Drawing.Point(91, 40)
+        Me.PassengerIdTextBox.Location = New System.Drawing.Point(91, 38)
         Me.PassengerIdTextBox.Name = "PassengerIdTextBox"
-        Me.PassengerIdTextBox.Size = New System.Drawing.Size(158, 22)
+        Me.PassengerIdTextBox.Size = New System.Drawing.Size(158, 23)
         Me.PassengerIdTextBox.TabIndex = 14
         '
         'AddPassengerForm
         '
         Me.AcceptButton = Me.AddButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(530, 250)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(530, 234)
         Me.Controls.Add(Me.AddButton)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PassengerGenderTextBox)
@@ -121,6 +132,10 @@ Partial Class AddPassengerForm
         Me.Controls.Add(Me.PassengerAgeTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PassengerIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "AddPassengerForm"
         Me.Text = "AddPassengerForm"
         Me.ResumeLayout(False)

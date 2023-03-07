@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{291F3A65-B1AD-408C-A545-D17C5FD9CEBB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>OrbetaActivity4.My.MyApplication</StartupObject>
-    <RootNamespace>OrbetaActivity4</RootNamespace>
+    <StartupObject>TrainStationManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>TrainStationManagementSystem</RootNamespace>
     <AssemblyName>TrainStationManagementSystem</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -394,6 +394,35 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Assets\Train Station Management System_genericmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\passenger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\destinations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Train Station Management System_reportsmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Train Station Management System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Train Station Management System_mainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Train Station Management System_Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\train_operator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\trains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\black-and-white-blank-ticket-17.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

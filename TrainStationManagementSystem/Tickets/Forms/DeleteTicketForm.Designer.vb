@@ -29,38 +29,47 @@ Partial Class DeleteTicketForm
         '
         'DeleteButton
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(111, 106)
+        Me.DeleteButton.BackColor = System.Drawing.Color.Plum
+        Me.DeleteButton.Location = New System.Drawing.Point(111, 99)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(126, 51)
+        Me.DeleteButton.Size = New System.Drawing.Size(126, 48)
         Me.DeleteButton.TabIndex = 27
         Me.DeleteButton.Text = "Delete Ticket"
-        Me.DeleteButton.UseVisualStyleBackColor = True
+        Me.DeleteButton.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(108, 37)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(108, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 17)
+        Me.Label1.Size = New System.Drawing.Size(83, 20)
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Ticket ID"
         '
         'TicketIdTextBox
         '
-        Me.TicketIdTextBox.Location = New System.Drawing.Point(111, 57)
+        Me.TicketIdTextBox.Location = New System.Drawing.Point(111, 53)
         Me.TicketIdTextBox.Name = "TicketIdTextBox"
-        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 22)
+        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 23)
         Me.TicketIdTextBox.TabIndex = 25
         '
         'DeleteTicketForm
         '
         Me.AcceptButton = Me.DeleteButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(348, 204)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(348, 191)
         Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TicketIdTextBox)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "DeleteTicketForm"
         Me.Text = "DeleteTicketForm"
         Me.ResumeLayout(False)

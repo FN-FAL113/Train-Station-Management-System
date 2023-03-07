@@ -22,7 +22,6 @@ Partial Class DestinationFeeView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DestinationFeeView))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DestinationFeeDataGridView = New System.Windows.Forms.DataGridView()
         Me.location = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,7 +35,7 @@ Partial Class DestinationFeeView
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(303, 41)
+        Me.Label1.Location = New System.Drawing.Point(346, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(230, 32)
         Me.Label1.TabIndex = 0
@@ -85,7 +84,7 @@ Partial Class DestinationFeeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(881, 509)
         Me.Controls.Add(Me.DestinationFeeDataGridView)

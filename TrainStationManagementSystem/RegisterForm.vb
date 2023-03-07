@@ -4,6 +4,7 @@ Public Class RegisterForm
     Private Sub LoginLinkLabel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LoginLinkLabel.LinkClicked
         Me.Close()
         LoginForm.Show()
+        LoginForm.Activate()
     End Sub
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
@@ -39,4 +40,8 @@ Public Class RegisterForm
 
     End Sub
 
+    Private Sub RegisterForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        LoginForm.Show()
+        LoginForm.Activate()
+    End Sub
 End Class
