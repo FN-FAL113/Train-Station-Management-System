@@ -37,10 +37,11 @@ Partial Class RegisterForm
         Me.RegisterButton.BackColor = System.Drawing.Color.Plum
         Me.RegisterButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.RegisterButton.FlatAppearance.BorderSize = 0
-        Me.RegisterButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RegisterButton.Location = New System.Drawing.Point(177, 345)
+        Me.RegisterButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegisterButton.Location = New System.Drawing.Point(152, 274)
+        Me.RegisterButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RegisterButton.Name = "RegisterButton"
-        Me.RegisterButton.Size = New System.Drawing.Size(105, 39)
+        Me.RegisterButton.Size = New System.Drawing.Size(79, 32)
         Me.RegisterButton.TabIndex = 13
         Me.RegisterButton.Text = "Register"
         Me.RegisterButton.UseVisualStyleBackColor = False
@@ -50,20 +51,23 @@ Partial Class RegisterForm
         Me.PasswordLabel.AutoSize = True
         Me.PasswordLabel.BackColor = System.Drawing.Color.Transparent
         Me.PasswordLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PasswordLabel.Location = New System.Drawing.Point(175, 266)
+        Me.PasswordLabel.Location = New System.Drawing.Point(151, 213)
+        Me.PasswordLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(107, 23)
+        Me.PasswordLabel.Size = New System.Drawing.Size(87, 18)
         Me.PasswordLabel.TabIndex = 10
         Me.PasswordLabel.Text = "Password"
         '
         'RegisterPasswordTextBox
         '
-        Me.RegisterPasswordTextBox.Location = New System.Drawing.Point(134, 296)
+        Me.RegisterPasswordTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegisterPasswordTextBox.Location = New System.Drawing.Point(115, 236)
+        Me.RegisterPasswordTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RegisterPasswordTextBox.MaxLength = 140
         Me.RegisterPasswordTextBox.Multiline = True
         Me.RegisterPasswordTextBox.Name = "RegisterPasswordTextBox"
         Me.RegisterPasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.RegisterPasswordTextBox.Size = New System.Drawing.Size(202, 26)
+        Me.RegisterPasswordTextBox.Size = New System.Drawing.Size(152, 22)
         Me.RegisterPasswordTextBox.TabIndex = 9
         '
         'UsernameLabel
@@ -71,19 +75,22 @@ Partial Class RegisterForm
         Me.UsernameLabel.AutoSize = True
         Me.UsernameLabel.BackColor = System.Drawing.Color.Transparent
         Me.UsernameLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UsernameLabel.Location = New System.Drawing.Point(178, 179)
+        Me.UsernameLabel.Location = New System.Drawing.Point(148, 144)
+        Me.UsernameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(111, 23)
+        Me.UsernameLabel.Size = New System.Drawing.Size(90, 18)
         Me.UsernameLabel.TabIndex = 8
         Me.UsernameLabel.Text = "Username"
         '
         'RegisterUsernameTextBox
         '
-        Me.RegisterUsernameTextBox.Location = New System.Drawing.Point(134, 214)
+        Me.RegisterUsernameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegisterUsernameTextBox.Location = New System.Drawing.Point(115, 169)
+        Me.RegisterUsernameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RegisterUsernameTextBox.MaxLength = 90
         Me.RegisterUsernameTextBox.Multiline = True
         Me.RegisterUsernameTextBox.Name = "RegisterUsernameTextBox"
-        Me.RegisterUsernameTextBox.Size = New System.Drawing.Size(202, 26)
+        Me.RegisterUsernameTextBox.Size = New System.Drawing.Size(152, 22)
         Me.RegisterUsernameTextBox.TabIndex = 7
         '
         'Disclaimer
@@ -91,9 +98,10 @@ Partial Class RegisterForm
         Me.Disclaimer.AutoSize = True
         Me.Disclaimer.BackColor = System.Drawing.Color.Transparent
         Me.Disclaimer.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Disclaimer.Location = New System.Drawing.Point(131, 404)
+        Me.Disclaimer.Location = New System.Drawing.Point(91, 328)
+        Me.Disclaimer.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Disclaimer.Name = "Disclaimer"
-        Me.Disclaimer.Size = New System.Drawing.Size(158, 17)
+        Me.Disclaimer.Size = New System.Drawing.Size(128, 14)
         Me.Disclaimer.TabIndex = 14
         Me.Disclaimer.Text = "Already Registered?"
         '
@@ -102,21 +110,23 @@ Partial Class RegisterForm
         Me.LoginLinkLabel.AutoSize = True
         Me.LoginLinkLabel.BackColor = System.Drawing.Color.Transparent
         Me.LoginLinkLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoginLinkLabel.Location = New System.Drawing.Point(290, 404)
+        Me.LoginLinkLabel.Location = New System.Drawing.Point(211, 328)
+        Me.LoginLinkLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LoginLinkLabel.Name = "LoginLinkLabel"
-        Me.LoginLinkLabel.Size = New System.Drawing.Size(48, 17)
+        Me.LoginLinkLabel.Size = New System.Drawing.Size(85, 14)
         Me.LoginLinkLabel.TabIndex = 15
         Me.LoginLinkLabel.TabStop = True
-        Me.LoginLinkLabel.Text = "Login"
+        Me.LoginLinkLabel.Text = "Click to Login"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(31, 68)
+        Me.Label1.Location = New System.Drawing.Point(23, 55)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(461, 78)
+        Me.Label1.Size = New System.Drawing.Size(366, 64)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Train Station Management " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System Registration"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -124,11 +134,11 @@ Partial Class RegisterForm
         'RegisterForm
         '
         Me.AcceptButton = Me.RegisterButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_Register
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.ClientSize = New System.Drawing.Size(656, 439)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LoginLinkLabel)
         Me.Controls.Add(Me.Disclaimer)
@@ -139,6 +149,7 @@ Partial Class RegisterForm
         Me.Controls.Add(Me.RegisterUsernameTextBox)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.Name = "RegisterForm"
         Me.Text = "RegisterForm"

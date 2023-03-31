@@ -35,4 +35,8 @@ Public Class MainMenu
         LoginForm.Close()
     End Sub
 
+    Private Sub ShowImportExportButton_Click(sender As Object, e As EventArgs) Handles ShowImportExportButton.Click
+        ImportExportMenu.Show()
+        ImportExportMenu.Activate()
+    End Sub
 End Class

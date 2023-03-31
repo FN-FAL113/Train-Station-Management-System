@@ -93,6 +93,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataImportExport\DataBackupDialog.Designer.vb">
+      <DependentUpon>DataBackupDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImportExport\DataBackupDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImportExport\ImportExportMenu.Designer.vb">
+      <DependentUpon>ImportExportMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImportExport\ImportExportMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DBUtils.vb" />
     <Compile Include="Destinations\DestinationMenu.Designer.vb">
       <DependentUpon>DestinationMenu.vb</DependentUpon>
@@ -276,6 +288,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DataImportExport\DataBackupDialog.resx">
+      <DependentUpon>DataBackupDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImportExport\ImportExportMenu.resx">
+      <DependentUpon>ImportExportMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Destinations\DestinationMenu.resx">
       <DependentUpon>DestinationMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -423,6 +441,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\black-and-white-blank-ticket-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Minimalist_info_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
