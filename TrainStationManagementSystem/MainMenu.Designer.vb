@@ -31,6 +31,7 @@ Partial Class MainMenu
         Me.ShowReportsButton = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ShowImportExportButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -104,7 +105,7 @@ Partial Class MainMenu
         '
         Me.ShowReportsButton.BackColor = System.Drawing.Color.LightPink
         Me.ShowReportsButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ShowReportsButton.Location = New System.Drawing.Point(604, 430)
+        Me.ShowReportsButton.Location = New System.Drawing.Point(530, 422)
         Me.ShowReportsButton.Name = "ShowReportsButton"
         Me.ShowReportsButton.Size = New System.Drawing.Size(116, 51)
         Me.ShowReportsButton.TabIndex = 7
@@ -127,11 +128,22 @@ Partial Class MainMenu
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(605, 366)
+        Me.Label3.Location = New System.Drawing.Point(566, 362)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 34)
+        Me.Label3.Size = New System.Drawing.Size(222, 34)
         Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Views"
+        Me.Label3.Text = "Miscellaneous"
+        '
+        'ShowImportExportButton
+        '
+        Me.ShowImportExportButton.BackColor = System.Drawing.Color.LightPink
+        Me.ShowImportExportButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ShowImportExportButton.Location = New System.Drawing.Point(686, 422)
+        Me.ShowImportExportButton.Name = "ShowImportExportButton"
+        Me.ShowImportExportButton.Size = New System.Drawing.Size(116, 51)
+        Me.ShowImportExportButton.TabIndex = 10
+        Me.ShowImportExportButton.Text = "Database"
+        Me.ShowImportExportButton.UseVisualStyleBackColor = False
         '
         'MainMenu
         '
@@ -140,6 +152,7 @@ Partial Class MainMenu
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_mainmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.ShowImportExportButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ShowReportsButton)
@@ -154,7 +167,7 @@ Partial Class MainMenu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "MainMenu"
-        Me.Text = "Form1"
+        Me.Text = "Main Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -169,4 +182,5 @@ Partial Class MainMenu
     Friend WithEvents ShowReportsButton As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents ShowImportExportButton As Button
 End Class

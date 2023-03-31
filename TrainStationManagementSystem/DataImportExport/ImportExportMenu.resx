@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Train Station Management System" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Train Station Management System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trains" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\trains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="destinations" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\destinations.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="train_operator" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\train_operator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="passenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\passenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Train Station Management System_genericmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Train Station Management System_genericmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="black-and-white-blank-ticket-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\black-and-white-blank-ticket-17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Train Station Management System_reportsmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Train Station Management System_reportsmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Train Station Management System_Register" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Train Station Management System_Register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Train Station Management System_mainmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Train Station Management System_mainmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minimalist_info_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Minimalist_info_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
