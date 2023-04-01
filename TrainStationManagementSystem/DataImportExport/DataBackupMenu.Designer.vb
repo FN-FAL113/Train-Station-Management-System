@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class DataBackupDialog
+Partial Class DataBackupMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -33,10 +33,10 @@ Partial Class DataBackupDialog
         Me.BackupStructureCheckBox = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BackupFileNameTextBox = New System.Windows.Forms.TextBox()
-        Me.InfoToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.InfoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.DbBackupInfoToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.DbBackupInfoPictureBox = New System.Windows.Forms.PictureBox()
         Me.TableStructureToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        CType(Me.InfoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DbBackupInfoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SelectLocationButton
@@ -138,23 +138,22 @@ Partial Class DataBackupDialog
         Me.BackupFileNameTextBox.Size = New System.Drawing.Size(134, 23)
         Me.BackupFileNameTextBox.TabIndex = 10
         '
-        'InfoToolTip
+        'DbBackupInfoToolTip
         '
-        Me.InfoToolTip.Active = False
-        Me.InfoToolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.InfoToolTip.ToolTipTitle = "Additional Info"
+        Me.DbBackupInfoToolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.DbBackupInfoToolTip.ToolTipTitle = "Additional Info"
         '
-        'InfoPictureBox
+        'DbBackupInfoPictureBox
         '
-        Me.InfoPictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.InfoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.InfoPictureBox.Image = Global.TrainStationManagementSystem.My.Resources.Resources.Minimalist_info_Icon
-        Me.InfoPictureBox.Location = New System.Drawing.Point(613, 5)
-        Me.InfoPictureBox.Name = "InfoPictureBox"
-        Me.InfoPictureBox.Size = New System.Drawing.Size(28, 24)
-        Me.InfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.InfoPictureBox.TabIndex = 11
-        Me.InfoPictureBox.TabStop = False
+        Me.DbBackupInfoPictureBox.BackColor = System.Drawing.Color.Transparent
+        Me.DbBackupInfoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DbBackupInfoPictureBox.Image = Global.TrainStationManagementSystem.My.Resources.Resources.Minimalist_info_Icon
+        Me.DbBackupInfoPictureBox.Location = New System.Drawing.Point(618, 5)
+        Me.DbBackupInfoPictureBox.Name = "DbBackupInfoPictureBox"
+        Me.DbBackupInfoPictureBox.Size = New System.Drawing.Size(23, 22)
+        Me.DbBackupInfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.DbBackupInfoPictureBox.TabIndex = 11
+        Me.DbBackupInfoPictureBox.TabStop = False
         '
         'DataBackupDialog
         '
@@ -163,7 +162,7 @@ Partial Class DataBackupDialog
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(647, 458)
-        Me.Controls.Add(Me.InfoPictureBox)
+        Me.Controls.Add(Me.DbBackupInfoPictureBox)
         Me.Controls.Add(Me.BackupFileNameTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackupStructureCheckBox)
@@ -179,7 +178,7 @@ Partial Class DataBackupDialog
         Me.MaximizeBox = False
         Me.Name = "DataBackupDialog"
         Me.Text = "Database Backup"
-        CType(Me.InfoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DbBackupInfoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,7 +194,7 @@ Partial Class DataBackupDialog
     Friend WithEvents BackupStructureCheckBox As CheckBox
     Friend WithEvents Label1 As Label
     Friend WithEvents BackupFileNameTextBox As TextBox
-    Friend WithEvents InfoToolTip As ToolTip
-    Friend WithEvents InfoPictureBox As PictureBox
+    Friend WithEvents DbBackupInfoToolTip As ToolTip
+    Friend WithEvents DbBackupInfoPictureBox As PictureBox
     Friend WithEvents TableStructureToolTip As ToolTip
 End Class

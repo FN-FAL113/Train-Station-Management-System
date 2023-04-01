@@ -39,7 +39,7 @@ Partial Class RegisterForm
         Me.RegisterButton.FlatAppearance.BorderSize = 0
         Me.RegisterButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegisterButton.Location = New System.Drawing.Point(152, 274)
-        Me.RegisterButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RegisterButton.Margin = New System.Windows.Forms.Padding(2)
         Me.RegisterButton.Name = "RegisterButton"
         Me.RegisterButton.Size = New System.Drawing.Size(79, 32)
         Me.RegisterButton.TabIndex = 13
@@ -62,7 +62,7 @@ Partial Class RegisterForm
         '
         Me.RegisterPasswordTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegisterPasswordTextBox.Location = New System.Drawing.Point(115, 236)
-        Me.RegisterPasswordTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RegisterPasswordTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.RegisterPasswordTextBox.MaxLength = 140
         Me.RegisterPasswordTextBox.Multiline = True
         Me.RegisterPasswordTextBox.Name = "RegisterPasswordTextBox"
@@ -86,7 +86,7 @@ Partial Class RegisterForm
         '
         Me.RegisterUsernameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegisterUsernameTextBox.Location = New System.Drawing.Point(115, 169)
-        Me.RegisterUsernameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RegisterUsernameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.RegisterUsernameTextBox.MaxLength = 90
         Me.RegisterUsernameTextBox.Multiline = True
         Me.RegisterUsernameTextBox.Name = "RegisterUsernameTextBox"
@@ -149,10 +149,10 @@ Partial Class RegisterForm
         Me.Controls.Add(Me.RegisterUsernameTextBox)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "RegisterForm"
-        Me.Text = "RegisterForm"
+        Me.Text = "System Registration"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

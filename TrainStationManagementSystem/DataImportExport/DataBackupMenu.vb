@@ -1,8 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class DataBackupDialog
-    Private Sub CheckedListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TablesCheckedListBox.SelectedIndexChanged
-
-    End Sub
+Public Class DataBackupMenu
 
     Private Sub DataDumpDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call Connect_to_DB()
@@ -20,12 +17,15 @@ Public Class DataBackupDialog
             End If
 
             While myreader.Read()
+                ' Add tables and views to check list box
                 TablesCheckedListBox.Items.Add(myreader.GetString(0))
+
             End While
         Catch ex As MySqlException
             MessageBox.Show("An error has occured with a message: " + ex.Message)
         End Try
 
+        ' Set file location label with default path on form load
         CurrentFileLocationLabel.Text = Environ("USERPROFILE") + "\" + DataDumpFolderBrowserDialog.RootFolder.ToString()
 
         Call Disconnect_to_DB()
@@ -34,7 +34,8 @@ Public Class DataBackupDialog
     Private Sub SelectLocationButton_Click(sender As Object, e As EventArgs) Handles SelectLocationButton.Click
         Dim folderBrowserResult As DialogResult = DataDumpFolderBrowserDialog.ShowDialog()
 
-        If folderBrowserResult.OK Then
+        If folderBrowserResult = 1 Then
+            ' Update file location label on folder select
             CurrentFileLocationLabel.Text = DataDumpFolderBrowserDialog.SelectedPath
         End If
     End Sub
@@ -50,14 +51,17 @@ Public Class DataBackupDialog
         Dim backupStruct As Boolean = BackupStructureCheckBox.Checked
 
         If Not backupData And Not backupStruct Then
+            ' prevent operation if backup options are not ticked
             MessageBox.Show("Please choose whether to backup data/structure")
             Return
         End If
 
-        Dim dataOption As String = IIf(Not backupData, "--no-data", "")
-        Dim structOption As String = IIf(Not backupStruct, "--no-create-info", "")
+        Dim dataOption As String = IIf(Not backupData, "--no-data", "") ' if data should be backed up
+        Dim structOption As String = IIf(Not backupStruct, "--no-create-info", "") ' if table structure should be back up
 
         Try
+            ' Keep events, procedures, functions and events. 
+            ' Backup checked items from the checklist box, type casted as string to retrieve table names
             Process.Start("cmd.exe", "/c mysqldump -u root -padmin -P 4306" _
             + " orbeta_fatdb_activity2 " _
             + dataOption + " " + structOption + " --events --routines --triggers " _
@@ -69,8 +73,8 @@ Public Class DataBackupDialog
         End Try
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles InfoPictureBox.Click
-        InfoToolTip.SetToolTip(InfoPictureBox,
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles DbBackupInfoPictureBox.Click
+        DbBackupInfoToolTip.SetToolTip(DbBackupInfoPictureBox,
                                "Proceedures, Functions, Events and Triggers are included in the backup")
     End Sub
 

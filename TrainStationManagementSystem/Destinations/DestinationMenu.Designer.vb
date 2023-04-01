@@ -83,7 +83,7 @@ Partial Class DestinationMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(397, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(187, 32)
+        Me.Label1.Size = New System.Drawing.Size(145, 26)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Destinations"
         '
@@ -140,7 +140,7 @@ Partial Class DestinationMenu
         '
         'DestinationMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
@@ -158,7 +158,7 @@ Partial Class DestinationMenu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "DestinationMenu"
-        Me.Text = "DestinationMenu"
+        Me.Text = "Destination Menu"
         CType(Me.DestinationDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

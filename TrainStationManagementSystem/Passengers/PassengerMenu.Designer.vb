@@ -91,7 +91,7 @@ Partial Class PassengerMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(397, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(162, 32)
+        Me.Label1.Size = New System.Drawing.Size(127, 26)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Passenger"
         '
@@ -149,7 +149,7 @@ Partial Class PassengerMenu
         '
         'PassengerMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
@@ -167,7 +167,7 @@ Partial Class PassengerMenu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "PassengerMenu"
-        Me.Text = "PassengerMenu"
+        Me.Text = "Passenger Menu"
         CType(Me.PassengerDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -93,16 +93,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataImportExport\DataBackupDialog.Designer.vb">
-      <DependentUpon>DataBackupDialog.vb</DependentUpon>
+    <Compile Include="DataImportExport\DataBackupMenu.Designer.vb">
+      <DependentUpon>DataBackupMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="DataImportExport\DataBackupDialog.vb">
+    <Compile Include="DataImportExport\DataBackupMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataImportExport\ImportExportMenu.Designer.vb">
-      <DependentUpon>ImportExportMenu.vb</DependentUpon>
+    <Compile Include="DataImportExport\ExportMenu.Designer.vb">
+      <DependentUpon>ExportMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="DataImportExport\ImportExportMenu.vb">
+    <Compile Include="DataImportExport\ExportMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImportExport\DatabaseManagement.Designer.vb">
+      <DependentUpon>DatabaseManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImportExport\DatabaseManagement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DBUtils.vb" />
@@ -288,11 +294,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataImportExport\DataBackupDialog.resx">
-      <DependentUpon>DataBackupDialog.vb</DependentUpon>
+    <EmbeddedResource Include="DataImportExport\DataBackupMenu.resx">
+      <DependentUpon>DataBackupMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataImportExport\ImportExportMenu.resx">
-      <DependentUpon>ImportExportMenu.vb</DependentUpon>
+    <EmbeddedResource Include="DataImportExport\DatabaseManagement.resx">
+      <DependentUpon>DatabaseManagement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Destinations\DestinationMenu.resx">
       <DependentUpon>DestinationMenu.vb</DependentUpon>
@@ -393,12 +399,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\station.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\sign-up-icon-5.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

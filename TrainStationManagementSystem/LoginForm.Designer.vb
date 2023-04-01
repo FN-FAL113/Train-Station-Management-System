@@ -38,7 +38,7 @@ Partial Class LoginForm
         Me.UsernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.UsernameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameTextBox.Location = New System.Drawing.Point(121, 168)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.UsernameTextBox.MaxLength = 90
         Me.UsernameTextBox.Multiline = True
         Me.UsernameTextBox.Name = "UsernameTextBox"
@@ -63,7 +63,7 @@ Partial Class LoginForm
         Me.PasswordTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordTextBox.ForeColor = System.Drawing.SystemColors.WindowText
         Me.PasswordTextBox.Location = New System.Drawing.Point(121, 235)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.PasswordTextBox.MaxLength = 140
         Me.PasswordTextBox.Multiline = True
         Me.PasswordTextBox.Name = "PasswordTextBox"
@@ -90,7 +90,7 @@ Partial Class LoginForm
         Me.LoginButton.FlatAppearance.BorderSize = 0
         Me.LoginButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoginButton.Location = New System.Drawing.Point(154, 273)
-        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(79, 32)
         Me.LoginButton.TabIndex = 4
@@ -154,10 +154,10 @@ Partial Class LoginForm
         Me.Controls.Add(Me.UsernameTextBox)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "LoginForm"
-        Me.Text = "LoginFormvb"
+        Me.Text = "System Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
