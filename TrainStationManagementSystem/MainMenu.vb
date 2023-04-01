@@ -36,7 +36,7 @@ Public Class MainMenu
     End Sub
 
     Private Sub ShowImportExportButton_Click(sender As Object, e As EventArgs) Handles ShowImportExportButton.Click
-        ImportExportMenu.Show()
-        ImportExportMenu.Activate()
+        DatabaseManagement.Show()
+        DatabaseManagement.Activate()
     End Sub
 End Class

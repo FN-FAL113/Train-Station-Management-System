@@ -38,7 +38,7 @@ Partial Class ReportsMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(157, 106)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(308, 32)
+        Me.Label1.Size = New System.Drawing.Size(242, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Train Station Reports"
         '
@@ -59,7 +59,7 @@ Partial Class ReportsMenu
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(561, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(206, 40)
+        Me.Label2.Size = New System.Drawing.Size(176, 34)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Check Destination Fee " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "with or without tax"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -71,7 +71,7 @@ Partial Class ReportsMenu
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(561, 222)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(195, 20)
+        Me.Label3.Size = New System.Drawing.Size(169, 17)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Check Ongoing Trains"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -93,7 +93,7 @@ Partial Class ReportsMenu
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(561, 363)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(220, 40)
+        Me.Label4.Size = New System.Drawing.Size(189, 34)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Check Total Passengers " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Per Train"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -110,7 +110,7 @@ Partial Class ReportsMenu
         '
         'ReportsMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_reportsmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -127,7 +127,7 @@ Partial Class ReportsMenu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "ReportsMenu"
-        Me.Text = "ReportsMenu"
+        Me.Text = "Reports Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
