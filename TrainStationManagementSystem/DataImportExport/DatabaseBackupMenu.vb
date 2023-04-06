@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class DataBackupMenu
+Public Class DatabaseBackupMenu
 
     Private Sub DataDumpDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call Connect_to_DB()
@@ -18,32 +18,32 @@ Public Class DataBackupMenu
 
             While myreader.Read()
                 ' Add tables and views to check list box
-                TablesCheckedListBox.Items.Add(myreader.GetString(0))
+                TablesDbBackupCheckedListBox.Items.Add(myreader.GetString(0))
 
             End While
         Catch ex As MySqlException
-            MessageBox.Show("An error has occured with a message: " + ex.Message)
+            MessageBox.Show("An error has occured while loading checklist box items: " + ex.Message)
         End Try
 
         ' Set file location label with default path on form load
-        CurrentFileLocationLabel.Text = Environ("USERPROFILE") + "\" + DataDumpFolderBrowserDialog.RootFolder.ToString()
+        CurrentDbBackupLocationLabel.Text = Environ("USERPROFILE") + "\" + DatabaseBackupFolderBrowserDialog.RootFolder.ToString()
 
         Call Disconnect_to_DB()
     End Sub
 
-    Private Sub SelectLocationButton_Click(sender As Object, e As EventArgs) Handles SelectLocationButton.Click
-        Dim folderBrowserResult As DialogResult = DataDumpFolderBrowserDialog.ShowDialog()
+    Private Sub SelectLocationButton_Click(sender As Object, e As EventArgs) Handles SelectDbBackupLocationButton.Click
+        Dim folderBrowserResult As DialogResult = DatabaseBackupFolderBrowserDialog.ShowDialog()
 
         If folderBrowserResult = 1 Then
             ' Update file location label on folder select
-            CurrentFileLocationLabel.Text = DataDumpFolderBrowserDialog.SelectedPath
+            CurrentDbBackupLocationLabel.Text = DatabaseBackupFolderBrowserDialog.SelectedPath
         End If
     End Sub
 
     Private Sub DumpButton_Click(sender As Object, e As EventArgs) Handles DumpButton.Click
-        Dim fileLoc As String = IIf(DataDumpFolderBrowserDialog.SelectedPath.Length = 0,
-                                Environ("USERPROFILE") + "\" + DataDumpFolderBrowserDialog.RootFolder.ToString(),
-                                DataDumpFolderBrowserDialog.SelectedPath)
+        Dim fileLoc As String = IIf(DatabaseBackupFolderBrowserDialog.SelectedPath.Length = 0,
+                                Environ("USERPROFILE") + "\" + DatabaseBackupFolderBrowserDialog.RootFolder.ToString(),
+                                DatabaseBackupFolderBrowserDialog.SelectedPath)
         Dim fileName As String = IIf(BackupFileNameTextBox.Text.Length = 0,
                                     "TrainStationDbBackup_" + Date.Now.ToString("yyMMdd"),
                                     BackupFileNameTextBox.Text)
@@ -62,12 +62,19 @@ Public Class DataBackupMenu
         Try
             ' Keep events, procedures, functions and events. 
             ' Backup checked items from the checklist box, type casted as string to retrieve table names
-            Process.Start("cmd.exe", "/c mysqldump -u root -padmin -P 4306" _
+            Dim proc As Process = Process.Start("cmd.exe", "/c mysqldump -u root -padmin -P 4306" _
             + " orbeta_fatdb_activity2 " _
             + dataOption + " " + structOption + " --events --routines --triggers " _
-            + String.Join(" ", TablesCheckedListBox.CheckedItems.Cast(Of String)) _
-            + " > " + fileLoc + "\" + fileName + ".sql")
+            + String.Join(" ", TablesDbBackupCheckedListBox.CheckedItems.Cast(Of String)) _
+            + " > " + fileLoc.Replace("\", "/") + "/" + fileName + ".sql")
 
+            proc.WaitForExit()
+
+            If proc.ExitCode = 0 Then
+                MessageBox.Show("Successfully backed up database!")
+            Else
+                Throw New Exception("An error has occured while backing up database!")
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -75,7 +82,10 @@ Public Class DataBackupMenu
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles DbBackupInfoPictureBox.Click
         DbBackupInfoToolTip.SetToolTip(DbBackupInfoPictureBox,
-                               "Proceedures, Functions, Events and Triggers are included in the backup")
+                               "1. Proceedures, Functions, Events and Triggers are automatically backed up" _
+                                + Environment.NewLine _
+                                + "2. If there are no selected tables, clicking start backup will backup all tables"
+                               )
     End Sub
 
     Private Sub BackupStructureCheckBox_MouseEnter(sender As Object, e As EventArgs) Handles BackupStructureCheckBox.MouseEnter

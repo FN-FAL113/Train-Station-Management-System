@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Module DBUtils
+    ' loads all data from a given table name parameter to a given grid object parameter 
     Public Sub load_data_to_datagrid(table As String, grid As DataGridView)
         Call Connect_to_DB()
 

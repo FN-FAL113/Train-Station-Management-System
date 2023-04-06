@@ -93,10 +93,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataImportExport\DataBackupMenu.Designer.vb">
-      <DependentUpon>DataBackupMenu.vb</DependentUpon>
+    <Compile Include="DataImportExport\DatabaseBackupMenu.Designer.vb">
+      <DependentUpon>DatabaseBackupMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="DataImportExport\DataBackupMenu.vb">
+    <Compile Include="DataImportExport\DatabaseBackupMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataImportExport\ExportMenu.Designer.vb">
@@ -294,11 +294,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataImportExport\DataBackupMenu.resx">
-      <DependentUpon>DataBackupMenu.vb</DependentUpon>
+    <EmbeddedResource Include="DataImportExport\DatabaseBackupMenu.resx">
+      <DependentUpon>DatabaseBackupMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataImportExport\DatabaseManagement.resx">
       <DependentUpon>DatabaseManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImportExport\ExportMenu.resx">
+      <DependentUpon>ExportMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Destinations\DestinationMenu.resx">
       <DependentUpon>DestinationMenu.vb</DependentUpon>

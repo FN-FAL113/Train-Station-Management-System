@@ -23,7 +23,7 @@ Partial Class DatabaseManagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ExportCSVButton = New System.Windows.Forms.Button()
+        Me.ExportAsButton = New System.Windows.Forms.Button()
         Me.ImportCSVButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,16 +35,16 @@ Partial Class DatabaseManagement
         CType(Me.DbManageInfoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ExportCSVButton
+        'ExportAsButton
         '
-        Me.ExportCSVButton.BackColor = System.Drawing.Color.LightPink
-        Me.ExportCSVButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ExportCSVButton.Location = New System.Drawing.Point(277, 97)
-        Me.ExportCSVButton.Name = "ExportCSVButton"
-        Me.ExportCSVButton.Size = New System.Drawing.Size(121, 48)
-        Me.ExportCSVButton.TabIndex = 8
-        Me.ExportCSVButton.Text = "Export As CSV"
-        Me.ExportCSVButton.UseVisualStyleBackColor = False
+        Me.ExportAsButton.BackColor = System.Drawing.Color.LightPink
+        Me.ExportAsButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExportAsButton.Location = New System.Drawing.Point(280, 97)
+        Me.ExportAsButton.Name = "ExportAsButton"
+        Me.ExportAsButton.Size = New System.Drawing.Size(121, 48)
+        Me.ExportAsButton.TabIndex = 8
+        Me.ExportAsButton.Text = "Export As"
+        Me.ExportAsButton.UseVisualStyleBackColor = False
         '
         'ImportCSVButton
         '
@@ -54,7 +54,7 @@ Partial Class DatabaseManagement
         Me.ImportCSVButton.Name = "ImportCSVButton"
         Me.ImportCSVButton.Size = New System.Drawing.Size(120, 48)
         Me.ImportCSVButton.TabIndex = 9
-        Me.ImportCSVButton.Text = "Import From CSV"
+        Me.ImportCSVButton.Text = "Import From CSV/TXT"
         Me.ImportCSVButton.UseVisualStyleBackColor = False
         '
         'Label1
@@ -117,7 +117,7 @@ Partial Class DatabaseManagement
         Me.ImportCSVToolTip.InitialDelay = 100
         Me.ImportCSVToolTip.ReshowDelay = 100
         '
-        'ImportExportMenu
+        'DatabaseManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -129,12 +129,12 @@ Partial Class DatabaseManagement
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ImportCSVButton)
-        Me.Controls.Add(Me.ExportCSVButton)
+        Me.Controls.Add(Me.ExportAsButton)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
-        Me.Name = "ImportExportMenu"
+        Me.Name = "DatabaseManagement"
         Me.Text = "Database Management"
         CType(Me.DbManageInfoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -142,7 +142,7 @@ Partial Class DatabaseManagement
 
     End Sub
 
-    Friend WithEvents ExportCSVButton As Button
+    Friend WithEvents ExportAsButton As Button
     Friend WithEvents ImportCSVButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
