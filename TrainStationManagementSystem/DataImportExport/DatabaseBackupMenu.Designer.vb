@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class DataBackupMenu
+Partial Class DatabaseBackupMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,12 +23,12 @@ Partial Class DataBackupMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DataDumpFolderBrowserDialog = New System.Windows.Forms.FolderBrowserDialog()
-        Me.SelectLocationButton = New System.Windows.Forms.Button()
-        Me.TablesCheckedListBox = New System.Windows.Forms.CheckedListBox()
+        Me.DatabaseBackupFolderBrowserDialog = New System.Windows.Forms.FolderBrowserDialog()
+        Me.SelectDbBackupLocationButton = New System.Windows.Forms.Button()
+        Me.TablesDbBackupCheckedListBox = New System.Windows.Forms.CheckedListBox()
         Me.DumpButton = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.CurrentFileLocationLabel = New System.Windows.Forms.Label()
+        Me.CurrentDbBackupLocationLabel = New System.Windows.Forms.Label()
         Me.BackupDataCheckBox = New System.Windows.Forms.CheckBox()
         Me.BackupStructureCheckBox = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,33 +39,33 @@ Partial Class DataBackupMenu
         CType(Me.DbBackupInfoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'SelectLocationButton
+        'SelectDbBackupLocationButton
         '
-        Me.SelectLocationButton.BackColor = System.Drawing.Color.Thistle
-        Me.SelectLocationButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SelectLocationButton.Location = New System.Drawing.Point(172, 401)
-        Me.SelectLocationButton.Name = "SelectLocationButton"
-        Me.SelectLocationButton.Size = New System.Drawing.Size(163, 42)
-        Me.SelectLocationButton.TabIndex = 0
-        Me.SelectLocationButton.Text = "Select Location"
-        Me.SelectLocationButton.UseVisualStyleBackColor = False
+        Me.SelectDbBackupLocationButton.BackColor = System.Drawing.Color.Thistle
+        Me.SelectDbBackupLocationButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SelectDbBackupLocationButton.Location = New System.Drawing.Point(172, 407)
+        Me.SelectDbBackupLocationButton.Name = "SelectDbBackupLocationButton"
+        Me.SelectDbBackupLocationButton.Size = New System.Drawing.Size(163, 42)
+        Me.SelectDbBackupLocationButton.TabIndex = 0
+        Me.SelectDbBackupLocationButton.Text = "Select Location"
+        Me.SelectDbBackupLocationButton.UseVisualStyleBackColor = False
         '
-        'TablesCheckedListBox
+        'TablesDbBackupCheckedListBox
         '
-        Me.TablesCheckedListBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TablesCheckedListBox.CheckOnClick = True
-        Me.TablesCheckedListBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TablesCheckedListBox.FormattingEnabled = True
-        Me.TablesCheckedListBox.Location = New System.Drawing.Point(139, 36)
-        Me.TablesCheckedListBox.Name = "TablesCheckedListBox"
-        Me.TablesCheckedListBox.Size = New System.Drawing.Size(373, 216)
-        Me.TablesCheckedListBox.TabIndex = 1
+        Me.TablesDbBackupCheckedListBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TablesDbBackupCheckedListBox.CheckOnClick = True
+        Me.TablesDbBackupCheckedListBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TablesDbBackupCheckedListBox.FormattingEnabled = True
+        Me.TablesDbBackupCheckedListBox.Location = New System.Drawing.Point(139, 54)
+        Me.TablesDbBackupCheckedListBox.Name = "TablesDbBackupCheckedListBox"
+        Me.TablesDbBackupCheckedListBox.Size = New System.Drawing.Size(373, 216)
+        Me.TablesDbBackupCheckedListBox.TabIndex = 1
         '
         'DumpButton
         '
         Me.DumpButton.BackColor = System.Drawing.Color.Thistle
         Me.DumpButton.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DumpButton.Location = New System.Drawing.Point(341, 401)
+        Me.DumpButton.Location = New System.Drawing.Point(341, 407)
         Me.DumpButton.Name = "DumpButton"
         Me.DumpButton.Size = New System.Drawing.Size(159, 42)
         Me.DumpButton.TabIndex = 4
@@ -77,28 +77,28 @@ Partial Class DataBackupMenu
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(182, 345)
+        Me.Label2.Location = New System.Drawing.Point(182, 350)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 16)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Backup File Location: "
         '
-        'CurrentFileLocationLabel
+        'CurrentDbBackupLocationLabel
         '
-        Me.CurrentFileLocationLabel.AutoSize = True
-        Me.CurrentFileLocationLabel.BackColor = System.Drawing.Color.Transparent
-        Me.CurrentFileLocationLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CurrentFileLocationLabel.Location = New System.Drawing.Point(241, 373)
-        Me.CurrentFileLocationLabel.Name = "CurrentFileLocationLabel"
-        Me.CurrentFileLocationLabel.Size = New System.Drawing.Size(0, 16)
-        Me.CurrentFileLocationLabel.TabIndex = 6
+        Me.CurrentDbBackupLocationLabel.AutoSize = True
+        Me.CurrentDbBackupLocationLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CurrentDbBackupLocationLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CurrentDbBackupLocationLabel.Location = New System.Drawing.Point(241, 378)
+        Me.CurrentDbBackupLocationLabel.Name = "CurrentDbBackupLocationLabel"
+        Me.CurrentDbBackupLocationLabel.Size = New System.Drawing.Size(0, 16)
+        Me.CurrentDbBackupLocationLabel.TabIndex = 6
         '
         'BackupDataCheckBox
         '
         Me.BackupDataCheckBox.AutoSize = True
         Me.BackupDataCheckBox.BackColor = System.Drawing.Color.Transparent
         Me.BackupDataCheckBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackupDataCheckBox.Location = New System.Drawing.Point(185, 274)
+        Me.BackupDataCheckBox.Location = New System.Drawing.Point(185, 281)
         Me.BackupDataCheckBox.Name = "BackupDataCheckBox"
         Me.BackupDataCheckBox.Size = New System.Drawing.Size(113, 20)
         Me.BackupDataCheckBox.TabIndex = 7
@@ -112,7 +112,7 @@ Partial Class DataBackupMenu
         Me.BackupStructureCheckBox.Checked = True
         Me.BackupStructureCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
         Me.BackupStructureCheckBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackupStructureCheckBox.Location = New System.Drawing.Point(313, 274)
+        Me.BackupStructureCheckBox.Location = New System.Drawing.Point(313, 281)
         Me.BackupStructureCheckBox.Name = "BackupStructureCheckBox"
         Me.BackupStructureCheckBox.Size = New System.Drawing.Size(187, 20)
         Me.BackupStructureCheckBox.TabIndex = 8
@@ -124,7 +124,7 @@ Partial Class DataBackupMenu
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(182, 311)
+        Me.Label1.Location = New System.Drawing.Point(182, 316)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 16)
         Me.Label1.TabIndex = 9
@@ -133,7 +133,7 @@ Partial Class DataBackupMenu
         'BackupFileNameTextBox
         '
         Me.BackupFileNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackupFileNameTextBox.Location = New System.Drawing.Point(316, 308)
+        Me.BackupFileNameTextBox.Location = New System.Drawing.Point(316, 313)
         Me.BackupFileNameTextBox.Name = "BackupFileNameTextBox"
         Me.BackupFileNameTextBox.Size = New System.Drawing.Size(134, 23)
         Me.BackupFileNameTextBox.TabIndex = 10
@@ -155,7 +155,7 @@ Partial Class DataBackupMenu
         Me.DbBackupInfoPictureBox.TabIndex = 11
         Me.DbBackupInfoPictureBox.TabStop = False
         '
-        'DataBackupDialog
+        'DatabaseBackupMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -167,16 +167,16 @@ Partial Class DataBackupMenu
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackupStructureCheckBox)
         Me.Controls.Add(Me.BackupDataCheckBox)
-        Me.Controls.Add(Me.CurrentFileLocationLabel)
+        Me.Controls.Add(Me.CurrentDbBackupLocationLabel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DumpButton)
-        Me.Controls.Add(Me.TablesCheckedListBox)
-        Me.Controls.Add(Me.SelectLocationButton)
+        Me.Controls.Add(Me.TablesDbBackupCheckedListBox)
+        Me.Controls.Add(Me.SelectDbBackupLocationButton)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
-        Me.Name = "DataBackupDialog"
+        Me.Name = "DatabaseBackupMenu"
         Me.Text = "Database Backup"
         CType(Me.DbBackupInfoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -184,12 +184,12 @@ Partial Class DataBackupMenu
 
     End Sub
 
-    Friend WithEvents DataDumpFolderBrowserDialog As FolderBrowserDialog
-    Friend WithEvents SelectLocationButton As Button
-    Friend WithEvents TablesCheckedListBox As CheckedListBox
+    Friend WithEvents DatabaseBackupFolderBrowserDialog As FolderBrowserDialog
+    Friend WithEvents SelectDbBackupLocationButton As Button
+    Friend WithEvents TablesDbBackupCheckedListBox As CheckedListBox
     Friend WithEvents DumpButton As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents CurrentFileLocationLabel As Label
+    Friend WithEvents CurrentDbBackupLocationLabel As Label
     Friend WithEvents BackupDataCheckBox As CheckBox
     Friend WithEvents BackupStructureCheckBox As CheckBox
     Friend WithEvents Label1 As Label

@@ -1,8 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class DatabaseManagement
     Private Sub DumpDatabaseButton_Click(sender As Object, e As EventArgs) Handles DumpDatabaseButton.Click
-        DataBackupMenu.Show()
-        DataBackupMenu.Activate()
+        DatabaseBackupMenu.Show()
+        DatabaseBackupMenu.Activate()
     End Sub
 
     Private Sub ImportCSVButton_Click(sender As Object, e As EventArgs) Handles ImportCSVButton.Click
@@ -12,7 +12,14 @@ Public Class DatabaseManagement
             Return
         End If
 
+        Dim fileExtension As String = IO.Path.GetExtension(ImportCSVOpenFileDialog.FileName).ToLower()
+        If Not fileExtension = ".csv" Or Not fileExtension = ".txt" Then
+            MessageBox.Show("Only CSV and TXT files are supported!")
+            Return
+        End If
+
         Call Connect_to_DB()
+
 
         Dim strSQL As String = "LOAD DATA INFILE '" + ImportCSVOpenFileDialog.FileName.Replace("\", "/") + "'" _
                                + " INTO TABLE " + IO.Path.GetFileName(ImportCSVOpenFileDialog.FileName).Replace(".csv", "") _
@@ -32,8 +39,9 @@ Public Class DatabaseManagement
         Call Disconnect_to_DB()
     End Sub
 
-    Private Sub ExportCSVButton_Click(sender As Object, e As EventArgs) Handles ExportCSVButton.Click
-
+    Private Sub ExportCSVButton_Click(sender As Object, e As EventArgs) Handles ExportAsButton.Click
+        ExportMenu.Show()
+        ExportMenu.Activate()
     End Sub
 
     Private Sub DbManagementInfoPictureBox_Click(sender As Object, e As EventArgs) Handles DbManageInfoPictureBox.Click
