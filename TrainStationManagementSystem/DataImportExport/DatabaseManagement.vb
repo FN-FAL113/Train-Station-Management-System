@@ -13,25 +13,28 @@ Public Class DatabaseManagement
         End If
 
         Dim fileExtension As String = IO.Path.GetExtension(ImportCSVOpenFileDialog.FileName).ToLower()
-        If Not fileExtension = ".csv" Or Not fileExtension = ".txt" Then
+
+        If Not fileExtension = ".csv" And Not fileExtension = ".txt" Then
             MessageBox.Show("Only CSV and TXT files are supported!")
             Return
         End If
 
-        Call Connect_to_DB()
+        Dim msgBoxResult As DialogResult = MessageBox.Show("Click yes if headers exist else no", "Ignore headers?", MessageBoxButtons.YesNo)
+        Dim shouldIgnoreHeader As String = IIf(msgBoxResult = 6, " ignore 1 lines", "")
 
+        Call Connect_to_DB()
 
         Dim strSQL As String = "LOAD DATA INFILE '" + ImportCSVOpenFileDialog.FileName.Replace("\", "/") + "'" _
                                + " INTO TABLE " + IO.Path.GetFileName(ImportCSVOpenFileDialog.FileName).Replace(".csv", "") _
                                + " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'" _
-                               + " ignore 1 lines" _
+                               + shouldIgnoreHeader _
                                + " SET ID = NULL;"
         Dim mycmd As New MySqlCommand(strSQL, myconn)
 
         Try
             mycmd.ExecuteNonQuery()
 
-            MessageBox.Show("Successfully imported csv data to database!")
+            MessageBox.Show("Successfully imported raw data to database!")
         Catch ex As Exception
             MessageBox.Show("An error has occured while importing csv data: " + ex.Message)
         End Try
