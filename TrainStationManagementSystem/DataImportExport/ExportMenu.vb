@@ -41,7 +41,7 @@ Public Class ExportMenu
         Call Connect_to_DB()
 
         Dim mycmd As New MySqlCommand("", myconn)
-        Dim fileType As String = If(CSVRadioButton.Checked, ".csv", ".txt")
+        Dim fileType As String = IIf(CSVRadioButton.Checked, ".csv", ".txt")
 
         Try
             Dim secureUploadLoc As String = getSecureFilePrivFolder() ' get mysql secure folder
