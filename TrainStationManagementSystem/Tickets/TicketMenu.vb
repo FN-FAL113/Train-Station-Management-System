@@ -28,5 +28,11 @@ Public Class TicketMenu
         Call load_data_to_datagrid("ticket", TicketDataGridView)
     End Sub
 
+    Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
+        Call import_to_excel("ticket", TicketDataGridView)
+    End Sub
 
+    Private Sub RefreshTicketButton_Click(sender As Object, e As EventArgs) Handles RefreshTicketButton.Click
+        Call load_data_to_datagrid("ticket", TicketDataGridView)
+    End Sub
 End Class

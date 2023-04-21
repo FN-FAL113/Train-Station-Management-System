@@ -66,7 +66,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\MySql.Data\v4.0_8.0.32.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.0.32\Assemblies\v4.8\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -93,10 +93,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataImportExport\DataBackupMenu.Designer.vb">
-      <DependentUpon>DataBackupMenu.vb</DependentUpon>
+    <Compile Include="DataImportExport\DatabaseBackupMenu.Designer.vb">
+      <DependentUpon>DatabaseBackupMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="DataImportExport\DataBackupMenu.vb">
+    <Compile Include="DataImportExport\DatabaseBackupMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataImportExport\ExportMenu.Designer.vb">
@@ -136,6 +136,7 @@
     <Compile Include="Destinations\Forms\UpdateDestinationForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ExcelUtils.vb" />
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -294,11 +295,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataImportExport\DataBackupMenu.resx">
-      <DependentUpon>DataBackupMenu.vb</DependentUpon>
+    <EmbeddedResource Include="DataImportExport\DatabaseBackupMenu.resx">
+      <DependentUpon>DatabaseBackupMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataImportExport\DatabaseManagement.resx">
       <DependentUpon>DatabaseManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImportExport\ExportMenu.resx">
+      <DependentUpon>ExportMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Destinations\DestinationMenu.resx">
       <DependentUpon>DestinationMenu.vb</DependentUpon>
@@ -444,6 +448,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Minimalist_info_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

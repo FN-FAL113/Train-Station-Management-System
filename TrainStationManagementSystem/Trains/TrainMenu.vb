@@ -26,4 +26,12 @@
     Private Sub TrainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call load_data_to_datagrid("train", TrainDataGridView)
     End Sub
+
+    Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
+        Call import_to_excel("train", TrainDataGridView)
+    End Sub
+
+    Private Sub RefreshTrainButton_Click(sender As Object, e As EventArgs) Handles RefreshTrainButton.Click
+        Call load_data_to_datagrid("train", TrainDataGridView)
+    End Sub
 End Class

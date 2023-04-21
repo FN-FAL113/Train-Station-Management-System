@@ -33,6 +33,7 @@ Partial Class PassengerMenu
         Me.DeletePassengerButton = New System.Windows.Forms.Button()
         Me.AddPassengerButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.PassengerDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -91,16 +92,16 @@ Partial Class PassengerMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(397, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 26)
+        Me.Label1.Size = New System.Drawing.Size(162, 32)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Passenger"
         '
         'RefreshPassengerButton
         '
         Me.RefreshPassengerButton.BackColor = System.Drawing.Color.Plum
-        Me.RefreshPassengerButton.Location = New System.Drawing.Point(33, 66)
+        Me.RefreshPassengerButton.Location = New System.Drawing.Point(33, 48)
         Me.RefreshPassengerButton.Name = "RefreshPassengerButton"
-        Me.RefreshPassengerButton.Size = New System.Drawing.Size(101, 23)
+        Me.RefreshPassengerButton.Size = New System.Drawing.Size(101, 41)
         Me.RefreshPassengerButton.TabIndex = 12
         Me.RefreshPassengerButton.Text = "Refresh Data"
         Me.RefreshPassengerButton.UseVisualStyleBackColor = False
@@ -147,14 +148,25 @@ Partial Class PassengerMenu
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(140, 47)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 22
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'PassengerMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.PassengerDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -186,4 +198,5 @@ Partial Class PassengerMenu
     Friend WithEvents passenger_name As DataGridViewTextBoxColumn
     Friend WithEvents gender As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class

@@ -34,6 +34,7 @@ Partial Class TrainOperatorMenu
         Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.phone_number = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrainOperatorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,9 +53,9 @@ Partial Class TrainOperatorMenu
         'RefreshTrainOperatorsButton
         '
         Me.RefreshTrainOperatorsButton.BackColor = System.Drawing.Color.Plum
-        Me.RefreshTrainOperatorsButton.Location = New System.Drawing.Point(29, 69)
+        Me.RefreshTrainOperatorsButton.Location = New System.Drawing.Point(29, 50)
         Me.RefreshTrainOperatorsButton.Name = "RefreshTrainOperatorsButton"
-        Me.RefreshTrainOperatorsButton.Size = New System.Drawing.Size(101, 23)
+        Me.RefreshTrainOperatorsButton.Size = New System.Drawing.Size(101, 42)
         Me.RefreshTrainOperatorsButton.TabIndex = 12
         Me.RefreshTrainOperatorsButton.Text = "Refresh Data"
         Me.RefreshTrainOperatorsButton.UseVisualStyleBackColor = False
@@ -151,17 +152,28 @@ Partial Class TrainOperatorMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(373, 50)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(184, 26)
+        Me.Label1.Size = New System.Drawing.Size(234, 32)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Train Operators"
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(136, 50)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 14
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'TrainOperatorMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RefreshTrainOperatorsButton)
         Me.Controls.Add(Me.UpdateTrainOperatorButton)
@@ -194,4 +206,5 @@ Partial Class TrainOperatorMenu
     Friend WithEvents gender As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
     Friend WithEvents phone_number As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class

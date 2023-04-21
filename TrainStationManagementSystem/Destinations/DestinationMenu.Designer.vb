@@ -33,6 +33,7 @@ Partial Class DestinationMenu
         Me.UpdateDestinationButton = New System.Windows.Forms.Button()
         Me.DeleteDestinationButton = New System.Windows.Forms.Button()
         Me.AddDestinationButton = New System.Windows.Forms.Button()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.DestinationDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +84,7 @@ Partial Class DestinationMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(397, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(145, 26)
+        Me.Label1.Size = New System.Drawing.Size(187, 32)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Destinations"
         '
@@ -101,9 +102,9 @@ Partial Class DestinationMenu
         'RefreshDestinationButton
         '
         Me.RefreshDestinationButton.BackColor = System.Drawing.Color.Plum
-        Me.RefreshDestinationButton.Location = New System.Drawing.Point(33, 67)
+        Me.RefreshDestinationButton.Location = New System.Drawing.Point(33, 48)
         Me.RefreshDestinationButton.Name = "RefreshDestinationButton"
-        Me.RefreshDestinationButton.Size = New System.Drawing.Size(101, 23)
+        Me.RefreshDestinationButton.Size = New System.Drawing.Size(101, 42)
         Me.RefreshDestinationButton.TabIndex = 19
         Me.RefreshDestinationButton.Text = "Refresh Data"
         Me.RefreshDestinationButton.UseVisualStyleBackColor = False
@@ -138,14 +139,25 @@ Partial Class DestinationMenu
         Me.AddDestinationButton.Text = "Add Destination"
         Me.AddDestinationButton.UseVisualStyleBackColor = False
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(140, 48)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 21
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'DestinationMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.DestinationDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -176,4 +188,5 @@ Partial Class DestinationMenu
     Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents destination_name As DataGridViewTextBoxColumn
     Friend WithEvents fee As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class
