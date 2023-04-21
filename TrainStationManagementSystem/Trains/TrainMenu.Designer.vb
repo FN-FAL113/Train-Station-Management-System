@@ -28,12 +28,13 @@ Partial Class TrainMenu
         Me.DeleteTrainOperatorButton = New System.Windows.Forms.Button()
         Me.AddTrainOperatorButton = New System.Windows.Forms.Button()
         Me.TrainDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PrintButton = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.destination_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.train_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.train_operator_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.is_ongoing = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.train_operator_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrainDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,9 +53,9 @@ Partial Class TrainMenu
         'RefreshTrainButton
         '
         Me.RefreshTrainButton.BackColor = System.Drawing.Color.Plum
-        Me.RefreshTrainButton.Location = New System.Drawing.Point(29, 69)
+        Me.RefreshTrainButton.Location = New System.Drawing.Point(29, 47)
         Me.RefreshTrainButton.Name = "RefreshTrainButton"
-        Me.RefreshTrainButton.Size = New System.Drawing.Size(101, 23)
+        Me.RefreshTrainButton.Size = New System.Drawing.Size(101, 45)
         Me.RefreshTrainButton.TabIndex = 19
         Me.RefreshTrainButton.Text = "Refresh Data"
         Me.RefreshTrainButton.UseVisualStyleBackColor = False
@@ -95,7 +96,7 @@ Partial Class TrainMenu
         Me.TrainDataGridView.AllowUserToDeleteRows = False
         Me.TrainDataGridView.AllowUserToOrderColumns = True
         Me.TrainDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.TrainDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.destination_id, Me.train_name, Me.train_operator_id, Me.is_ongoing})
+        Me.TrainDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.destination_id, Me.train_name, Me.is_ongoing, Me.train_operator_id})
         Me.TrainDataGridView.Location = New System.Drawing.Point(29, 98)
         Me.TrainDataGridView.Name = "TrainDataGridView"
         Me.TrainDataGridView.ReadOnly = True
@@ -103,6 +104,27 @@ Partial Class TrainMenu
         Me.TrainDataGridView.RowTemplate.Height = 24
         Me.TrainDataGridView.Size = New System.Drawing.Size(811, 324)
         Me.TrainDataGridView.TabIndex = 15
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(415, 47)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(102, 32)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Trains"
+        '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(136, 47)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 45)
+        Me.PrintButton.TabIndex = 21
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
         '
         'id
         '
@@ -128,14 +150,6 @@ Partial Class TrainMenu
         Me.train_name.Name = "train_name"
         Me.train_name.ReadOnly = True
         '
-        'train_operator_id
-        '
-        Me.train_operator_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.train_operator_id.HeaderText = "train operator id"
-        Me.train_operator_id.MinimumWidth = 6
-        Me.train_operator_id.Name = "train_operator_id"
-        Me.train_operator_id.ReadOnly = True
-        '
         'is_ongoing
         '
         Me.is_ongoing.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
@@ -144,24 +158,22 @@ Partial Class TrainMenu
         Me.is_ongoing.Name = "is_ongoing"
         Me.is_ongoing.ReadOnly = True
         '
-        'Label1
+        'train_operator_id
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(415, 47)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 26)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Trains"
+        Me.train_operator_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.train_operator_id.HeaderText = "train operator id"
+        Me.train_operator_id.MinimumWidth = 6
+        Me.train_operator_id.Name = "train_operator_id"
+        Me.train_operator_id.ReadOnly = True
         '
         'TrainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RefreshTrainButton)
         Me.Controls.Add(Me.UpdateTrainOperatorButton)
@@ -189,9 +201,10 @@ Partial Class TrainMenu
     Friend WithEvents AddTrainOperatorButton As Button
     Friend WithEvents TrainDataGridView As DataGridView
     Friend WithEvents Label1 As Label
+    Friend WithEvents PrintButton As Button
     Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents destination_id As DataGridViewTextBoxColumn
     Friend WithEvents train_name As DataGridViewTextBoxColumn
-    Friend WithEvents train_operator_id As DataGridViewTextBoxColumn
     Friend WithEvents is_ongoing As DataGridViewTextBoxColumn
+    Friend WithEvents train_operator_id As DataGridViewTextBoxColumn
 End Class

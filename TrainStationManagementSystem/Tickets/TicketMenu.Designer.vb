@@ -34,6 +34,7 @@ Partial Class TicketMenu
         Me.UpdateTicketButton = New System.Windows.Forms.Button()
         Me.RefreshTicketButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.TicketDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +46,7 @@ Partial Class TicketMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(397, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 26)
+        Me.Label1.Size = New System.Drawing.Size(116, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Tickets"
         '
@@ -141,9 +142,9 @@ Partial Class TicketMenu
         'RefreshTicketButton
         '
         Me.RefreshTicketButton.BackColor = System.Drawing.Color.Plum
-        Me.RefreshTicketButton.Location = New System.Drawing.Point(29, 66)
+        Me.RefreshTicketButton.Location = New System.Drawing.Point(29, 47)
         Me.RefreshTicketButton.Name = "RefreshTicketButton"
-        Me.RefreshTicketButton.Size = New System.Drawing.Size(101, 23)
+        Me.RefreshTicketButton.Size = New System.Drawing.Size(101, 42)
         Me.RefreshTicketButton.TabIndex = 5
         Me.RefreshTicketButton.Text = "Refresh Data"
         Me.RefreshTicketButton.UseVisualStyleBackColor = False
@@ -159,13 +160,24 @@ Partial Class TicketMenu
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(136, 47)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 15
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'TicketMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RefreshTicketButton)
         Me.Controls.Add(Me.UpdateTicketButton)
@@ -198,4 +210,5 @@ Partial Class TicketMenu
     Friend WithEvents train_id As DataGridViewTextBoxColumn
     Friend WithEvents fee_with_tax As DataGridViewTextBoxColumn
     Friend WithEvents date_added As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class

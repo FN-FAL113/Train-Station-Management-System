@@ -11,6 +11,7 @@ Public Class DatabaseBackupMenu
         Try
             myreader = mycmd.ExecuteReader()
 
+            ' return if there no database tables
             If Not myreader.HasRows Then
                 MessageBox.Show("No database tables yet!")
                 Return
@@ -19,7 +20,6 @@ Public Class DatabaseBackupMenu
             While myreader.Read()
                 ' Add tables and views to check list box
                 TablesDbBackupCheckedListBox.Items.Add(myreader.GetString(0))
-
             End While
         Catch ex As MySqlException
             MessageBox.Show("An error has occured while loading checklist box items: " + ex.Message)
@@ -45,7 +45,7 @@ Public Class DatabaseBackupMenu
                                 Environ("USERPROFILE") + "\" + DatabaseBackupFolderBrowserDialog.RootFolder.ToString(),
                                 DatabaseBackupFolderBrowserDialog.SelectedPath)
         Dim fileName As String = IIf(BackupFileNameTextBox.Text.Length = 0,
-                                    "TrainStationDbBackup_" + Date.Now.ToString("yyMMdd"),
+                                    "TrainStationDbBackup_" + Date.Now.ToString("yy-MM-dd_HH-mm-ss"),
                                     BackupFileNameTextBox.Text)
         Dim backupData As Boolean = BackupDataCheckBox.Checked
         Dim backupStruct As Boolean = BackupStructureCheckBox.Checked
@@ -68,6 +68,7 @@ Public Class DatabaseBackupMenu
             + String.Join(" ", TablesDbBackupCheckedListBox.CheckedItems.Cast(Of String)) _
             + " > " + fileLoc.Replace("\", "/") + "/" + fileName + ".sql")
 
+            ' wait for process to exit for synchronous execution for code below this
             proc.WaitForExit()
 
             If proc.ExitCode = 0 Then
@@ -81,11 +82,12 @@ Public Class DatabaseBackupMenu
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles DbBackupInfoPictureBox.Click
-        DbBackupInfoToolTip.SetToolTip(DbBackupInfoPictureBox,
+        DbBackupInfoToolTip.SetToolTip(
+                                DbBackupInfoPictureBox,
                                "1. Proceedures, Functions, Events and Triggers are automatically backed up" _
                                 + Environment.NewLine _
                                 + "2. If there are no selected tables, clicking start backup will backup all tables"
-                               )
+                              )
     End Sub
 
     Private Sub BackupStructureCheckBox_MouseEnter(sender As Object, e As EventArgs) Handles BackupStructureCheckBox.MouseEnter

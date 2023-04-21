@@ -26,4 +26,12 @@
     Private Sub DestinationMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call load_data_to_datagrid("destination", DestinationDataGridView)
     End Sub
+
+    Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
+        Call import_to_excel("destination", DestinationDataGridView)
+    End Sub
+
+    Private Sub RefreshDestinationButton_Click(sender As Object, e As EventArgs) Handles RefreshDestinationButton.Click
+        Call load_data_to_datagrid("destination", DestinationDataGridView)
+    End Sub
 End Class

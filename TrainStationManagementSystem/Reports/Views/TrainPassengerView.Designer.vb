@@ -28,6 +28,7 @@ Partial Class TrainPassengerView
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.TrainPassengerDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -67,7 +68,7 @@ Partial Class TrainPassengerView
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(151, 48)
+        Me.Label1.Location = New System.Drawing.Point(162, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(333, 32)
         Me.Label1.TabIndex = 4
@@ -95,6 +96,16 @@ Partial Class TrainPassengerView
         Me.TotalLabel.TabIndex = 7
         Me.TotalLabel.Text = "0"
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(41, 53)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 22
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'TrainPassengerView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -102,6 +113,7 @@ Partial Class TrainPassengerView
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(546, 454)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.TotalLabel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TrainPassengerDataGridView)
@@ -124,4 +136,5 @@ Partial Class TrainPassengerView
     Friend WithEvents passengers As DataGridViewTextBoxColumn
     Friend WithEvents Label2 As Label
     Friend WithEvents TotalLabel As Label
+    Friend WithEvents PrintButton As Button
 End Class

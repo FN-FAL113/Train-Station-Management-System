@@ -20,5 +20,7 @@ Public Class TrainPassengerView
 
     End Sub
 
-
+    Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
+        Call import_to_excel("train_passenger", TrainPassengerDataGridView)
+    End Sub
 End Class

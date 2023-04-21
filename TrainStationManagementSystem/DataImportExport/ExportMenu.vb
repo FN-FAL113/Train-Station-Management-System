@@ -16,6 +16,7 @@ Public Class ExportMenu
                 Return
             End If
 
+            ' add to table checkboxes to CheckedListBox control
             While myreader.Read()
                 TablesDataExportCheckedListBox.Items.Add(myreader.GetString(0))
             End While
@@ -44,11 +45,12 @@ Public Class ExportMenu
         Dim fileType As String = IIf(CSVRadioButton.Checked, ".csv", ".txt")
 
         Try
-            Dim secureUploadLoc As String = getSecureFilePrivFolder() ' get mysql secure folder
+            Dim secureUploadLoc As String = getSecureFilePrivFolder() ' get mysql secure folder path
 
+            ' export table data which are checked from the CheckedListBox control
             For Each table As String In TablesDataExportCheckedListBox.CheckedItems
                 mycmd.CommandText = "SELECT * FROM " + table + " INTO OUTFILE " _
-                                    + "'" + secureUploadLoc + table + fileType + "' " _
+                                    + "'" + secureUploadLoc + table + "-" + Date.Now.ToString("yy-MM-dd_HH-mm-ss") + fileType + "' " _
                                     + "FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n';"
                 mycmd.ExecuteReader().Close() ' close this reader for reusability
             Next

@@ -27,6 +27,7 @@ Partial Class DestinationFeeView
         Me.location = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fee = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.fee_with_tax = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.DestinationFeeDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -80,6 +81,16 @@ Partial Class DestinationFeeView
         Me.fee_with_tax.Name = "fee_with_tax"
         Me.fee_with_tax.ReadOnly = True
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(42, 41)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 23
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'DestinationFeeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -87,6 +98,7 @@ Partial Class DestinationFeeView
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(881, 509)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.DestinationFeeDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
@@ -106,4 +118,5 @@ Partial Class DestinationFeeView
     Friend WithEvents location As DataGridViewTextBoxColumn
     Friend WithEvents fee As DataGridViewTextBoxColumn
     Friend WithEvents fee_with_tax As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class

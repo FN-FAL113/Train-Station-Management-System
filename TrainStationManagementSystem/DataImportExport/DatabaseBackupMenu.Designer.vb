@@ -36,6 +36,7 @@ Partial Class DatabaseBackupMenu
         Me.DbBackupInfoToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.DbBackupInfoPictureBox = New System.Windows.Forms.PictureBox()
         Me.TableStructureToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.DbBackupInfoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,7 +59,7 @@ Partial Class DatabaseBackupMenu
         Me.TablesDbBackupCheckedListBox.FormattingEnabled = True
         Me.TablesDbBackupCheckedListBox.Location = New System.Drawing.Point(139, 54)
         Me.TablesDbBackupCheckedListBox.Name = "TablesDbBackupCheckedListBox"
-        Me.TablesDbBackupCheckedListBox.Size = New System.Drawing.Size(373, 216)
+        Me.TablesDbBackupCheckedListBox.Size = New System.Drawing.Size(373, 198)
         Me.TablesDbBackupCheckedListBox.TabIndex = 1
         '
         'DumpButton
@@ -79,7 +80,7 @@ Partial Class DatabaseBackupMenu
         Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(182, 350)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(156, 16)
+        Me.Label2.Size = New System.Drawing.Size(190, 20)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Backup File Location: "
         '
@@ -90,7 +91,7 @@ Partial Class DatabaseBackupMenu
         Me.CurrentDbBackupLocationLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CurrentDbBackupLocationLabel.Location = New System.Drawing.Point(241, 378)
         Me.CurrentDbBackupLocationLabel.Name = "CurrentDbBackupLocationLabel"
-        Me.CurrentDbBackupLocationLabel.Size = New System.Drawing.Size(0, 16)
+        Me.CurrentDbBackupLocationLabel.Size = New System.Drawing.Size(0, 20)
         Me.CurrentDbBackupLocationLabel.TabIndex = 6
         '
         'BackupDataCheckBox
@@ -100,7 +101,7 @@ Partial Class DatabaseBackupMenu
         Me.BackupDataCheckBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackupDataCheckBox.Location = New System.Drawing.Point(185, 281)
         Me.BackupDataCheckBox.Name = "BackupDataCheckBox"
-        Me.BackupDataCheckBox.Size = New System.Drawing.Size(113, 20)
+        Me.BackupDataCheckBox.Size = New System.Drawing.Size(137, 24)
         Me.BackupDataCheckBox.TabIndex = 7
         Me.BackupDataCheckBox.Text = "Backup Data"
         Me.BackupDataCheckBox.UseVisualStyleBackColor = False
@@ -114,7 +115,7 @@ Partial Class DatabaseBackupMenu
         Me.BackupStructureCheckBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackupStructureCheckBox.Location = New System.Drawing.Point(313, 281)
         Me.BackupStructureCheckBox.Name = "BackupStructureCheckBox"
-        Me.BackupStructureCheckBox.Size = New System.Drawing.Size(187, 20)
+        Me.BackupStructureCheckBox.Size = New System.Drawing.Size(226, 24)
         Me.BackupStructureCheckBox.TabIndex = 8
         Me.BackupStructureCheckBox.Text = "Backup Table Structure"
         Me.BackupStructureCheckBox.UseVisualStyleBackColor = False
@@ -126,7 +127,7 @@ Partial Class DatabaseBackupMenu
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(182, 316)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 16)
+        Me.Label1.Size = New System.Drawing.Size(167, 20)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Backup File Name: "
         '
@@ -135,7 +136,7 @@ Partial Class DatabaseBackupMenu
         Me.BackupFileNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackupFileNameTextBox.Location = New System.Drawing.Point(316, 313)
         Me.BackupFileNameTextBox.Name = "BackupFileNameTextBox"
-        Me.BackupFileNameTextBox.Size = New System.Drawing.Size(134, 23)
+        Me.BackupFileNameTextBox.Size = New System.Drawing.Size(134, 27)
         Me.BackupFileNameTextBox.TabIndex = 10
         '
         'DbBackupInfoToolTip
@@ -155,13 +156,25 @@ Partial Class DatabaseBackupMenu
         Me.DbBackupInfoPictureBox.TabIndex = 11
         Me.DbBackupInfoPictureBox.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(216, 20)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(272, 28)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Select Database Table"
+        '
         'DatabaseBackupMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(647, 458)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DbBackupInfoPictureBox)
         Me.Controls.Add(Me.BackupFileNameTextBox)
         Me.Controls.Add(Me.Label1)
@@ -197,4 +210,5 @@ Partial Class DatabaseBackupMenu
     Friend WithEvents DbBackupInfoToolTip As ToolTip
     Friend WithEvents DbBackupInfoPictureBox As PictureBox
     Friend WithEvents TableStructureToolTip As ToolTip
+    Friend WithEvents Label3 As Label
 End Class
