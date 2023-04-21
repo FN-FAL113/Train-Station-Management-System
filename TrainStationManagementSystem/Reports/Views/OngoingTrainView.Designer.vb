@@ -28,6 +28,7 @@ Partial Class OngoingTrainView
         Me.destination_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.train_operator = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PrintButton = New System.Windows.Forms.Button()
         CType(Me.OngoingTrainDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -89,6 +90,16 @@ Partial Class OngoingTrainView
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Ongoing Trains"
         '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(42, 39)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 42)
+        Me.PrintButton.TabIndex = 23
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
         'OngoingTrainView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -96,6 +107,7 @@ Partial Class OngoingTrainView
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(881, 509)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.OngoingTrainDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
@@ -116,4 +128,5 @@ Partial Class OngoingTrainView
     Friend WithEvents train_name As DataGridViewTextBoxColumn
     Friend WithEvents destination_name As DataGridViewTextBoxColumn
     Friend WithEvents train_operator As DataGridViewTextBoxColumn
+    Friend WithEvents PrintButton As Button
 End Class

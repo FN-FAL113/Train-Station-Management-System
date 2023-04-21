@@ -4,15 +4,18 @@ Module DBUtils
     Public Sub load_data_to_datagrid(table As String, grid As DataGridView)
         Call Connect_to_DB()
 
-        Dim strSQL As String = "Select * from " & table
+        Dim strSQL As String = "Select * from " + table
 
         Dim mycmd As New MySqlCommand(strSQL, myconn)
         Try
-            Dim result = mycmd.ExecuteReader
+            ' clear data grid rows before adding data
+            grid.Rows.Clear()
+            Dim result = mycmd.ExecuteReader()
 
             If result.HasRows Then
                 Dim row = 0
                 Dim i As Integer
+
                 While result.Read()
                     grid.Rows.Insert(row)
 
@@ -24,7 +27,8 @@ Module DBUtils
                 End While
             End If
         Catch ex As MySqlException
-            MessageBox.Show("An Error has occured: " + ex.Message)
+            MessageBox.Show("An Error has occured while loading data to grid: " + ex.Message +
+                            Environment.NewLine + "Table name: " + table)
         End Try
 
         Call Disconnect_to_DB()
