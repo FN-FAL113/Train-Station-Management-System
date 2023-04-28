@@ -28,13 +28,15 @@ Partial Class TrainMenu
         Me.DeleteTrainOperatorButton = New System.Windows.Forms.Button()
         Me.AddTrainOperatorButton = New System.Windows.Forms.Button()
         Me.TrainDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PrintButton = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.destination_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.train_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.is_ongoing = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.train_operator_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PrintButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrainDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -105,27 +107,6 @@ Partial Class TrainMenu
         Me.TrainDataGridView.Size = New System.Drawing.Size(811, 324)
         Me.TrainDataGridView.TabIndex = 15
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(415, 47)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 32)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Trains"
-        '
-        'PrintButton
-        '
-        Me.PrintButton.BackColor = System.Drawing.Color.Plum
-        Me.PrintButton.Location = New System.Drawing.Point(136, 47)
-        Me.PrintButton.Name = "PrintButton"
-        Me.PrintButton.Size = New System.Drawing.Size(101, 45)
-        Me.PrintButton.TabIndex = 21
-        Me.PrintButton.Text = "Print to Excel"
-        Me.PrintButton.UseVisualStyleBackColor = False
-        '
         'id
         '
         Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
@@ -166,13 +147,56 @@ Partial Class TrainMenu
         Me.train_operator_id.Name = "train_operator_id"
         Me.train_operator_id.ReadOnly = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(415, 47)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(80, 26)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Trains"
+        '
+        'PrintButton
+        '
+        Me.PrintButton.BackColor = System.Drawing.Color.Plum
+        Me.PrintButton.Location = New System.Drawing.Point(136, 47)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(101, 45)
+        Me.PrintButton.TabIndex = 21
+        Me.PrintButton.Text = "Print to Excel"
+        Me.PrintButton.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Plum
+        Me.Button1.Location = New System.Drawing.Point(600, 47)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(117, 45)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Available Destination"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Plum
+        Me.Button2.Location = New System.Drawing.Point(723, 47)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(117, 45)
+        Me.Button2.TabIndex = 23
+        Me.Button2.Text = "Available Train Operator"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'TrainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.TrainStationManagementSystem.My.Resources.Resources.Train_Station_Management_System_genericmenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(874, 540)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RefreshTrainButton)
@@ -207,4 +231,6 @@ Partial Class TrainMenu
     Friend WithEvents train_name As DataGridViewTextBoxColumn
     Friend WithEvents is_ongoing As DataGridViewTextBoxColumn
     Friend WithEvents train_operator_id As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

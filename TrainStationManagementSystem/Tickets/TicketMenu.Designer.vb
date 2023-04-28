@@ -24,17 +24,17 @@ Partial Class TicketMenu
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TicketDataGridView = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.passenger_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.train_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.fee_with_tax = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.date_added = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AddTicketButton = New System.Windows.Forms.Button()
         Me.DeleteTicketButton = New System.Windows.Forms.Button()
         Me.UpdateTicketButton = New System.Windows.Forms.Button()
         Me.RefreshTicketButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PrintButton = New System.Windows.Forms.Button()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.passenger_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.train_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fee_with_tax = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.date_added = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.TicketDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,50 +64,6 @@ Partial Class TicketMenu
         Me.TicketDataGridView.RowTemplate.Height = 24
         Me.TicketDataGridView.Size = New System.Drawing.Size(811, 339)
         Me.TicketDataGridView.TabIndex = 1
-        '
-        'id
-        '
-        Me.id.HeaderText = "id"
-        Me.id.MinimumWidth = 6
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        Me.id.Width = 125
-        '
-        'passenger_id
-        '
-        Me.passenger_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.passenger_id.FillWeight = 283.871!
-        Me.passenger_id.HeaderText = "passenger id"
-        Me.passenger_id.MinimumWidth = 125
-        Me.passenger_id.Name = "passenger_id"
-        Me.passenger_id.ReadOnly = True
-        '
-        'train_id
-        '
-        Me.train_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.train_id.FillWeight = 7.992467!
-        Me.train_id.HeaderText = "train id"
-        Me.train_id.MinimumWidth = 125
-        Me.train_id.Name = "train_id"
-        Me.train_id.ReadOnly = True
-        '
-        'fee_with_tax
-        '
-        Me.fee_with_tax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.fee_with_tax.FillWeight = 25.64791!
-        Me.fee_with_tax.HeaderText = "fee with tax"
-        Me.fee_with_tax.MinimumWidth = 125
-        Me.fee_with_tax.Name = "fee_with_tax"
-        Me.fee_with_tax.ReadOnly = True
-        '
-        'date_added
-        '
-        Me.date_added.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.date_added.FillWeight = 7.48865!
-        Me.date_added.HeaderText = "date"
-        Me.date_added.MinimumWidth = 120
-        Me.date_added.Name = "date_added"
-        Me.date_added.ReadOnly = True
         '
         'AddTicketButton
         '
@@ -170,6 +126,49 @@ Partial Class TicketMenu
         Me.PrintButton.Text = "Print to Excel"
         Me.PrintButton.UseVisualStyleBackColor = False
         '
+        'id
+        '
+        Me.id.HeaderText = "id"
+        Me.id.MinimumWidth = 6
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        Me.id.Width = 125
+        '
+        'passenger_id
+        '
+        Me.passenger_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.passenger_id.FillWeight = 283.871!
+        Me.passenger_id.HeaderText = "passenger id"
+        Me.passenger_id.MinimumWidth = 125
+        Me.passenger_id.Name = "passenger_id"
+        Me.passenger_id.ReadOnly = True
+        '
+        'train_id
+        '
+        Me.train_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.train_id.FillWeight = 7.992467!
+        Me.train_id.HeaderText = "train id"
+        Me.train_id.MinimumWidth = 125
+        Me.train_id.Name = "train_id"
+        Me.train_id.ReadOnly = True
+        '
+        'fee_with_tax
+        '
+        Me.fee_with_tax.HeaderText = "fee with tax"
+        Me.fee_with_tax.MinimumWidth = 6
+        Me.fee_with_tax.Name = "fee_with_tax"
+        Me.fee_with_tax.ReadOnly = True
+        Me.fee_with_tax.Width = 125
+        '
+        'date_added
+        '
+        Me.date_added.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.date_added.FillWeight = 7.48865!
+        Me.date_added.HeaderText = "date time"
+        Me.date_added.MinimumWidth = 120
+        Me.date_added.Name = "date_added"
+        Me.date_added.ReadOnly = True
+        '
         'TicketMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -205,10 +204,10 @@ Partial Class TicketMenu
     Friend WithEvents UpdateTicketButton As Button
     Friend WithEvents RefreshTicketButton As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PrintButton As Button
     Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents passenger_id As DataGridViewTextBoxColumn
     Friend WithEvents train_id As DataGridViewTextBoxColumn
     Friend WithEvents fee_with_tax As DataGridViewTextBoxColumn
     Friend WithEvents date_added As DataGridViewTextBoxColumn
-    Friend WithEvents PrintButton As Button
 End Class

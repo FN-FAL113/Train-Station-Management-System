@@ -58,9 +58,10 @@ Partial Class AddTrainOperatorForm
         '
         'TrainOperatorGenderTextBox
         '
+        Me.TrainOperatorGenderTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorGenderTextBox.Location = New System.Drawing.Point(371, 46)
         Me.TrainOperatorGenderTextBox.Name = "TrainOperatorGenderTextBox"
-        Me.TrainOperatorGenderTextBox.Size = New System.Drawing.Size(122, 23)
+        Me.TrainOperatorGenderTextBox.Size = New System.Drawing.Size(122, 25)
         Me.TrainOperatorGenderTextBox.TabIndex = 32
         '
         'Label5
@@ -76,9 +77,10 @@ Partial Class AddTrainOperatorForm
         '
         'TrainOperatorNameTextBox
         '
+        Me.TrainOperatorNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorNameTextBox.Location = New System.Drawing.Point(196, 46)
         Me.TrainOperatorNameTextBox.Name = "TrainOperatorNameTextBox"
-        Me.TrainOperatorNameTextBox.Size = New System.Drawing.Size(149, 23)
+        Me.TrainOperatorNameTextBox.Size = New System.Drawing.Size(149, 25)
         Me.TrainOperatorNameTextBox.TabIndex = 30
         '
         'Label3
@@ -94,9 +96,10 @@ Partial Class AddTrainOperatorForm
         '
         'TrainOperatorAgeTextBox
         '
+        Me.TrainOperatorAgeTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorAgeTextBox.Location = New System.Drawing.Point(31, 108)
         Me.TrainOperatorAgeTextBox.Name = "TrainOperatorAgeTextBox"
-        Me.TrainOperatorAgeTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TrainOperatorAgeTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TrainOperatorAgeTextBox.TabIndex = 28
         '
         'Label2
@@ -123,16 +126,18 @@ Partial Class AddTrainOperatorForm
         '
         'TrainOperatorIdTextBox
         '
+        Me.TrainOperatorIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 46)
         Me.TrainOperatorIdTextBox.Name = "TrainOperatorIdTextBox"
-        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TrainOperatorIdTextBox.TabIndex = 25
         '
         'TrainOperatorPhoneNumberTextBox
         '
+        Me.TrainOperatorPhoneNumberTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorPhoneNumberTextBox.Location = New System.Drawing.Point(196, 108)
         Me.TrainOperatorPhoneNumberTextBox.Name = "TrainOperatorPhoneNumberTextBox"
-        Me.TrainOperatorPhoneNumberTextBox.Size = New System.Drawing.Size(149, 23)
+        Me.TrainOperatorPhoneNumberTextBox.Size = New System.Drawing.Size(149, 25)
         Me.TrainOperatorPhoneNumberTextBox.TabIndex = 36
         '
         'AddTrainOperatorForm

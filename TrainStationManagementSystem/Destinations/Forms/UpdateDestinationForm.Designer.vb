@@ -54,9 +54,10 @@ Partial Class UpdateDestinationForm
         '
         'DestinationFeeTextBox
         '
+        Me.DestinationFeeTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DestinationFeeTextBox.Location = New System.Drawing.Point(133, 175)
         Me.DestinationFeeTextBox.Name = "DestinationFeeTextBox"
-        Me.DestinationFeeTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.DestinationFeeTextBox.Size = New System.Drawing.Size(158, 25)
         Me.DestinationFeeTextBox.TabIndex = 38
         '
         'Label5
@@ -72,9 +73,10 @@ Partial Class UpdateDestinationForm
         '
         'DestinationNameTextBox
         '
+        Me.DestinationNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DestinationNameTextBox.Location = New System.Drawing.Point(133, 114)
         Me.DestinationNameTextBox.Name = "DestinationNameTextBox"
-        Me.DestinationNameTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.DestinationNameTextBox.Size = New System.Drawing.Size(158, 25)
         Me.DestinationNameTextBox.TabIndex = 36
         '
         'Label1
@@ -90,9 +92,10 @@ Partial Class UpdateDestinationForm
         '
         'DestinationIdTextBox
         '
+        Me.DestinationIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DestinationIdTextBox.Location = New System.Drawing.Point(133, 52)
         Me.DestinationIdTextBox.Name = "DestinationIdTextBox"
-        Me.DestinationIdTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.DestinationIdTextBox.Size = New System.Drawing.Size(158, 25)
         Me.DestinationIdTextBox.TabIndex = 34
         '
         'UpdateDestinationForm

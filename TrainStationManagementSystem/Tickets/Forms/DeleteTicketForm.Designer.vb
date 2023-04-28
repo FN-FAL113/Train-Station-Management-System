@@ -30,7 +30,7 @@ Partial Class DeleteTicketForm
         'DeleteButton
         '
         Me.DeleteButton.BackColor = System.Drawing.Color.Plum
-        Me.DeleteButton.Location = New System.Drawing.Point(111, 99)
+        Me.DeleteButton.Location = New System.Drawing.Point(108, 112)
         Me.DeleteButton.Name = "DeleteButton"
         Me.DeleteButton.Size = New System.Drawing.Size(126, 48)
         Me.DeleteButton.TabIndex = 27
@@ -42,7 +42,7 @@ Partial Class DeleteTicketForm
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(108, 33)
+        Me.Label1.Location = New System.Drawing.Point(104, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 20)
         Me.Label1.TabIndex = 26
@@ -50,9 +50,10 @@ Partial Class DeleteTicketForm
         '
         'TicketIdTextBox
         '
-        Me.TicketIdTextBox.Location = New System.Drawing.Point(111, 53)
+        Me.TicketIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TicketIdTextBox.Location = New System.Drawing.Point(108, 56)
         Me.TicketIdTextBox.Name = "TicketIdTextBox"
-        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TicketIdTextBox.TabIndex = 25
         '
         'DeleteTicketForm

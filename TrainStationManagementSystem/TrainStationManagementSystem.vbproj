@@ -275,6 +275,12 @@
     <Compile Include="Trains\Forms\AddTrainForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Trains\Views\AvailableDestinationView.Designer.vb">
+      <DependentUpon>AvailableDestinationView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\Views\AvailableDestinationView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trains\Forms\DeleteTrainForm.Designer.vb">
       <DependentUpon>DeleteTrainForm.vb</DependentUpon>
     </Compile>
@@ -291,6 +297,12 @@
       <DependentUpon>TrainMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="Trains\TrainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains\Views\AvailableTrainOperatorView.Designer.vb">
+      <DependentUpon>AvailableTrainOperatorView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trains\Views\AvailableTrainOperatorView.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -390,6 +402,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Trains\TrainMenu.resx">
       <DependentUpon>TrainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\Views\AvailableDestinationView.resx">
+      <DependentUpon>AvailableDestinationView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains\Views\AvailableTrainOperatorView.resx">
+      <DependentUpon>AvailableTrainOperatorView.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

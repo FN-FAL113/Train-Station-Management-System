@@ -48,7 +48,7 @@ Partial Class AddPassengerForm
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(91, 79)
+        Me.Label6.Location = New System.Drawing.Point(91, 88)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 20)
         Me.Label6.TabIndex = 22
@@ -56,9 +56,10 @@ Partial Class AddPassengerForm
         '
         'PassengerGenderTextBox
         '
-        Me.PassengerGenderTextBox.Location = New System.Drawing.Point(91, 102)
+        Me.PassengerGenderTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerGenderTextBox.Location = New System.Drawing.Point(91, 111)
         Me.PassengerGenderTextBox.Name = "PassengerGenderTextBox"
-        Me.PassengerGenderTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.PassengerGenderTextBox.Size = New System.Drawing.Size(158, 25)
         Me.PassengerGenderTextBox.TabIndex = 21
         '
         'Label5
@@ -66,7 +67,7 @@ Partial Class AddPassengerForm
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(296, 14)
+        Me.Label5.Location = New System.Drawing.Point(296, 23)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 20
@@ -74,9 +75,10 @@ Partial Class AddPassengerForm
         '
         'PassengerNameTextBox
         '
-        Me.PassengerNameTextBox.Location = New System.Drawing.Point(296, 38)
+        Me.PassengerNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerNameTextBox.Location = New System.Drawing.Point(296, 47)
         Me.PassengerNameTextBox.Name = "PassengerNameTextBox"
-        Me.PassengerNameTextBox.Size = New System.Drawing.Size(167, 23)
+        Me.PassengerNameTextBox.Size = New System.Drawing.Size(167, 25)
         Me.PassengerNameTextBox.TabIndex = 19
         '
         'Label3
@@ -84,7 +86,7 @@ Partial Class AddPassengerForm
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(296, 79)
+        Me.Label3.Location = New System.Drawing.Point(296, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(42, 20)
         Me.Label3.TabIndex = 18
@@ -92,9 +94,10 @@ Partial Class AddPassengerForm
         '
         'PassengerAgeTextBox
         '
-        Me.PassengerAgeTextBox.Location = New System.Drawing.Point(296, 102)
+        Me.PassengerAgeTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerAgeTextBox.Location = New System.Drawing.Point(296, 111)
         Me.PassengerAgeTextBox.Name = "PassengerAgeTextBox"
-        Me.PassengerAgeTextBox.Size = New System.Drawing.Size(167, 23)
+        Me.PassengerAgeTextBox.Size = New System.Drawing.Size(167, 25)
         Me.PassengerAgeTextBox.TabIndex = 17
         '
         'Label1
@@ -102,7 +105,7 @@ Partial Class AddPassengerForm
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(91, 14)
+        Me.Label1.Location = New System.Drawing.Point(91, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(27, 20)
         Me.Label1.TabIndex = 15
@@ -110,9 +113,10 @@ Partial Class AddPassengerForm
         '
         'PassengerIdTextBox
         '
-        Me.PassengerIdTextBox.Location = New System.Drawing.Point(91, 38)
+        Me.PassengerIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerIdTextBox.Location = New System.Drawing.Point(91, 47)
         Me.PassengerIdTextBox.Name = "PassengerIdTextBox"
-        Me.PassengerIdTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.PassengerIdTextBox.Size = New System.Drawing.Size(158, 25)
         Me.PassengerIdTextBox.TabIndex = 14
         '
         'AddPassengerForm

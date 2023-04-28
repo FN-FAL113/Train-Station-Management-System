@@ -50,9 +50,10 @@ Partial Class DeleteTrainForm
         '
         'TrainIdTextBox
         '
+        Me.TrainIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainIdTextBox.Location = New System.Drawing.Point(111, 58)
         Me.TrainIdTextBox.Name = "TrainIdTextBox"
-        Me.TrainIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TrainIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TrainIdTextBox.TabIndex = 31
         '
         'DeleteTrainForm

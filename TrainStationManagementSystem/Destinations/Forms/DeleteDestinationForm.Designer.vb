@@ -50,9 +50,10 @@ Partial Class DeleteDestinationForm
         '
         'DestinationIdTextBox
         '
+        Me.DestinationIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DestinationIdTextBox.Location = New System.Drawing.Point(111, 58)
         Me.DestinationIdTextBox.Name = "DestinationIdTextBox"
-        Me.DestinationIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.DestinationIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.DestinationIdTextBox.TabIndex = 31
         '
         'DeleteDestinationForm

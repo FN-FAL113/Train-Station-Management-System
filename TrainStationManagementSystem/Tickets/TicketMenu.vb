@@ -25,7 +25,7 @@ Public Class TicketMenu
     End Sub
 
     Private Sub TicketMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call load_data_to_datagrid("ticket", TicketDataGridView)
+        Call load_data_to_datagrid("ticket", TicketDataGridView, "")
     End Sub
 
     Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
@@ -33,6 +33,6 @@ Public Class TicketMenu
     End Sub
 
     Private Sub RefreshTicketButton_Click(sender As Object, e As EventArgs) Handles RefreshTicketButton.Click
-        Call load_data_to_datagrid("ticket", TicketDataGridView)
+        Call load_data_to_datagrid("ticket", TicketDataGridView, "")
     End Sub
 End Class

@@ -21,7 +21,7 @@ Module ExcelUtils
                 .Font.Bold = True
             End With
 
-            ' row-column param for #Cells method, data grid columns to excel row cells/column
+            ' row-column param for #Cells method, data grid column names to excel row cells/column
             xlsSheet.Cells(4, i + 1) = grid.Columns(i).Name
         Next
 

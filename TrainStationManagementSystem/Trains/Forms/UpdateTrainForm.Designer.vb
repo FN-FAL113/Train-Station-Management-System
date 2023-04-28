@@ -37,9 +37,10 @@ Partial Class UpdateTrainForm
         '
         'TrainIsOngoingTextBox
         '
+        Me.TrainIsOngoingTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainIsOngoingTextBox.Location = New System.Drawing.Point(196, 108)
         Me.TrainIsOngoingTextBox.Name = "TrainIsOngoingTextBox"
-        Me.TrainIsOngoingTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.TrainIsOngoingTextBox.Size = New System.Drawing.Size(158, 25)
         Me.TrainIsOngoingTextBox.TabIndex = 58
         '
         'UpdateButton
@@ -66,9 +67,10 @@ Partial Class UpdateTrainForm
         '
         'TrainNameTextBox
         '
+        Me.TrainNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainNameTextBox.Location = New System.Drawing.Point(371, 46)
         Me.TrainNameTextBox.Name = "TrainNameTextBox"
-        Me.TrainNameTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TrainNameTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TrainNameTextBox.TabIndex = 55
         '
         'Label5
@@ -85,9 +87,10 @@ Partial Class UpdateTrainForm
         '
         'TrainDestinationIdTextBox
         '
+        Me.TrainDestinationIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainDestinationIdTextBox.Location = New System.Drawing.Point(196, 46)
         Me.TrainDestinationIdTextBox.Name = "TrainDestinationIdTextBox"
-        Me.TrainDestinationIdTextBox.Size = New System.Drawing.Size(158, 23)
+        Me.TrainDestinationIdTextBox.Size = New System.Drawing.Size(158, 25)
         Me.TrainDestinationIdTextBox.TabIndex = 53
         '
         'Label3
@@ -104,9 +107,10 @@ Partial Class UpdateTrainForm
         '
         'TrainOperatorIdTextBox
         '
+        Me.TrainOperatorIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainOperatorIdTextBox.Location = New System.Drawing.Point(31, 108)
         Me.TrainOperatorIdTextBox.Name = "TrainOperatorIdTextBox"
-        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(152, 23)
+        Me.TrainOperatorIdTextBox.Size = New System.Drawing.Size(152, 25)
         Me.TrainOperatorIdTextBox.TabIndex = 51
         '
         'Label2
@@ -135,9 +139,10 @@ Partial Class UpdateTrainForm
         '
         'TrainIdTextBox
         '
+        Me.TrainIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrainIdTextBox.Location = New System.Drawing.Point(31, 46)
         Me.TrainIdTextBox.Name = "TrainIdTextBox"
-        Me.TrainIdTextBox.Size = New System.Drawing.Size(152, 23)
+        Me.TrainIdTextBox.Size = New System.Drawing.Size(152, 25)
         Me.TrainIdTextBox.TabIndex = 48
         '
         'UpdateTrainForm
