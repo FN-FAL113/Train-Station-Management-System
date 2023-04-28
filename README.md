@@ -8,8 +8,9 @@ Source code for my output (incremental activity) on course subject: ```IT120: Ev
 - Simple UI/IX design, organized by menus and forms
 - MySQL DB Connection handling
 - Table and View data displayed through a DataGridView control
-- CRUD forms (no backend yet)
+- CRUD forms
 - Data loading, conversion and database backup
+- Report Generation using MS Excel
 
 # License:
 ### [**GNU GPL v3.0**](https://github.com/FN-FAL113/Train-Station-Management-System/blob/main/LICENSE)
