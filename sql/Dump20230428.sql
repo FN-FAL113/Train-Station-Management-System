@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `change_this_db_name` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `change_this_db_name`;
+CREATE DATABASE  IF NOT EXISTS `orbeta_fatdb_activity2` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `orbeta_fatdb_activity2`;
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: change_this_db_name
+-- Host: 127.0.0.1    Database: orbeta_fatdb_activity2
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -30,7 +30,7 @@ CREATE TABLE `destination` (
   `fee` double NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `destination` (
 
 LOCK TABLES `destination` WRITE;
 /*!40000 ALTER TABLE `destination` DISABLE KEYS */;
-INSERT INTO `destination` VALUES (1,'Legazpi',25),(2,'Camalig',15),(3,'Cabangan',17.5),(4,'Daraga',20),(5,'Sorsogon',40),(6,'Ligao',15),(7,'Oas',16.5),(8,'Polangui',25),(9,'Nabua',35),(10,'Bato',40);
+INSERT INTO `destination` VALUES (1,'Legazpi',25),(2,'Camalig',15),(3,'Cabangan',17.5),(4,'Daraga',20),(5,'Sorsogon',40),(6,'Ligao',15),(7,'Oas',16.5),(8,'Polangui',25),(9,'Nabua',35),(10,'Bato',40),(11,'Camarines Sur',70),(12,'Camarines Norte',90);
 /*!40000 ALTER TABLE `destination` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +114,7 @@ CREATE TABLE `system_user` (
   `updatedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,7 @@ CREATE TABLE `system_user` (
 
 LOCK TABLES `system_user` WRITE;
 /*!40000 ALTER TABLE `system_user` DISABLE KEYS */;
-INSERT INTO `system_user` VALUES (3,'test1','5a105e8b9d40e1329780d62ea2265d8a','2023-03-02 19:18:22',NULL),(4,'test2','ad0234829205b9033196ba818f7a872b','2023-03-03 20:36:05',NULL);
+INSERT INTO `system_user` VALUES (3,'test1','5a105e8b9d40e1329780d62ea2265d8a','2023-03-02 19:18:22',NULL),(4,'test2','ad0234829205b9033196ba818f7a872b','2023-03-03 20:36:05',NULL),(6,'test3','8ad8757baa8564dc136c1e07507f4a98','2023-03-07 21:53:45',NULL),(7,'test','5a105e8b9d40e1329780d62ea2265d8a','2023-03-30 21:08:52',NULL);
 /*!40000 ALTER TABLE `system_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -146,7 +146,7 @@ CREATE TABLE `ticket` (
   KEY `ticket_ibfk_3` (`train_id`),
   CONSTRAINT `ticket_ibfk_1` FOREIGN KEY (`passenger_id`) REFERENCES `passenger` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `ticket_ibfk_3` FOREIGN KEY (`train_id`) REFERENCES `train` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +155,7 @@ CREATE TABLE `ticket` (
 
 LOCK TABLES `ticket` WRITE;
 /*!40000 ALTER TABLE `ticket` DISABLE KEYS */;
-INSERT INTO `ticket` VALUES (3,5,3,NULL,'2023-02-15 20:15:11'),(5,4,6,NULL,'2023-02-15 20:15:11'),(6,7,6,NULL,'2023-02-15 20:15:11'),(7,9,7,NULL,'2023-02-15 20:15:11'),(8,1,2,17.25,'2023-02-17 20:15:11'),(9,2,1,28.749999999999996,'2023-02-17 20:15:11'),(10,3,10,46,'2023-02-17 20:15:11'),(11,6,4,23,'2023-02-17 20:15:11'),(12,6,8,28.749999999999996,'2023-02-17 20:15:11');
+INSERT INTO `ticket` VALUES (3,5,3,NULL,'2023-02-15 20:15:11'),(5,4,6,NULL,'2023-02-15 20:15:11'),(6,7,6,NULL,'2023-02-15 20:15:11'),(7,9,7,NULL,'2023-02-15 20:15:11'),(8,1,2,NULL,'2023-02-17 20:15:11'),(9,2,1,NULL,'2023-02-17 20:15:11'),(10,3,10,NULL,'2023-02-17 20:15:11'),(11,6,4,NULL,'2023-02-17 20:15:11'),(12,6,8,NULL,'2023-02-17 20:15:11'),(13,1,2,17.25,'2023-02-17 20:15:11'),(14,2,3,20.7,'2023-02-17 20:15:11'),(15,1,1,28.749999999999996,'2023-04-28 15:42:28');
 /*!40000 ALTER TABLE `ticket` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -222,6 +222,31 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `update_tax_to_fee` BEFORE UPDATE ON `ticket` FOR EACH ROW BEGIN
+	DECLARE fee_without_tax DOUBLE;
+	
+	if new.fee_with_tax IS NULL OR new.fee_with_tax = 0 THEN
+			SELECT fee INTO fee_without_tax from destination inner join train 
+							on destination.id = train.destination_id
+							where train.id = new.train_id;
+							
+			set new.fee_with_tax = fee_tax(fee_without_tax, 0.15);
+		END IF;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
 /*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `check_ticket_delete` BEFORE DELETE ON `ticket` FOR EACH ROW BEGIN
 	DECLARE ongoing INT;
     
@@ -258,7 +283,7 @@ CREATE TABLE `train` (
   UNIQUE KEY `destination_id_UNIQUE` (`destination_id`),
   CONSTRAINT `train_ibfk_1` FOREIGN KEY (`destination_id`) REFERENCES `destination` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `train_ibfk_2` FOREIGN KEY (`train_operator_id`) REFERENCES `train_operator` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -267,7 +292,7 @@ CREATE TABLE `train` (
 
 LOCK TABLES `train` WRITE;
 /*!40000 ALTER TABLE `train` DISABLE KEYS */;
-INSERT INTO `train` VALUES (1,1,'krakken',0,1),(2,2,'santiago',1,2),(3,3,'grant',0,3),(4,4,'cassanova',1,4),(5,5,'feather',1,5),(6,6,'courage',0,6),(7,7,'philips',0,7),(8,8,'greesy',0,8),(9,9,'clump',1,9),(10,10,'villa',1,10);
+INSERT INTO `train` VALUES (1,1,'krakken',0,1),(2,2,'santiago',1,2),(3,3,'grant',0,3),(4,4,'cassanova',1,4),(5,5,'feather',1,5),(6,6,'courage',0,6),(7,7,'philips',0,7),(8,8,'greesy',0,8),(9,9,'clump',1,9),(10,10,'villa',1,10),(11,11,'test',1,11),(12,12,'testing2',1,12);
 /*!40000 ALTER TABLE `train` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -286,8 +311,9 @@ CREATE TABLE `train_operator` (
   `phone_number` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
-  UNIQUE KEY `phone_number` (`phone_number`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `phone_number` (`phone_number`),
+  UNIQUE KEY `id_2` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -296,7 +322,7 @@ CREATE TABLE `train_operator` (
 
 LOCK TABLES `train_operator` WRITE;
 /*!40000 ALTER TABLE `train_operator` DISABLE KEYS */;
-INSERT INTO `train_operator` VALUES (1,'john wick','male',39,254728),(2,'drow traxex','female',31,267234),(3,'furion wrath','male',25,287942),(4,'nevermore shadows','male',45,246783),(5,'puck chub','male',51,246712),(6,'kunkka admiral','male',53,236721),(7,'krobelus dark','female',45,298578),(8,'kael invoker','male',37,246802),(9,'lina inverse','female',27,278542),(10,'zeus grump','male',55,267813);
+INSERT INTO `train_operator` VALUES (1,'john wick','male',39,254728),(2,'drow traxex','female',31,267234),(3,'furion wrath','male',25,287942),(4,'nevermore shadows','male',45,246783),(5,'puck chub','male',51,246712),(6,'kunkka admiral','male',53,236721),(7,'krobelus dark','female',45,298578),(8,'kael invoker','male',37,246802),(9,'lina inverse','female',27,278542),(10,'zeus grump','male',55,267813),(11,'david john','male',42,273892),(12,'Kirk ham','male',61,271823);
 /*!40000 ALTER TABLE `train_operator` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -314,11 +340,11 @@ SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = @saved_cs_client;
 
 --
--- Dumping events for database 'change_this_db_name'
+-- Dumping events for database 'orbeta_fatdb_activity2'
 --
 
 --
--- Dumping routines for database 'change_this_db_name'
+-- Dumping routines for database 'orbeta_fatdb_activity2'
 --
 /*!50003 DROP FUNCTION IF EXISTS `fee_tax` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -448,4 +474,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-06 21:44:30
+-- Dump completed on 2023-04-28 15:45:05
