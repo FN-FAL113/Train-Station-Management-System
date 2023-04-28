@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class TrainPassengerView
     Private Sub TrainPassengerView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call load_data_to_datagrid("train_passenger", TrainPassengerDataGridView)
+        Call load_data_to_datagrid("train_passenger", TrainPassengerDataGridView, "")
 
         Call Connect_to_DB()
 

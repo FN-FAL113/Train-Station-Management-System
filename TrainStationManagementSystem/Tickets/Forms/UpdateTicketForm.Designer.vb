@@ -25,8 +25,6 @@ Partial Class UpdateTicketForm
         Me.TicketIdTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TicketFeeTextBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TicketPassengerIdTextBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -37,9 +35,10 @@ Partial Class UpdateTicketForm
         '
         'TicketIdTextBox
         '
+        Me.TicketIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TicketIdTextBox.Location = New System.Drawing.Point(27, 47)
         Me.TicketIdTextBox.Name = "TicketIdTextBox"
-        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TicketIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TicketIdTextBox.TabIndex = 0
         '
         'Label1
@@ -58,29 +57,11 @@ Partial Class UpdateTicketForm
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(191, 86)
+        Me.Label2.Location = New System.Drawing.Point(26, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Date"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(26, 86)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Fee"
-        '
-        'TicketFeeTextBox
-        '
-        Me.TicketFeeTextBox.Location = New System.Drawing.Point(27, 109)
-        Me.TicketFeeTextBox.Name = "TicketFeeTextBox"
-        Me.TicketFeeTextBox.Size = New System.Drawing.Size(129, 23)
-        Me.TicketFeeTextBox.TabIndex = 4
         '
         'Label5
         '
@@ -95,9 +76,10 @@ Partial Class UpdateTicketForm
         '
         'TicketPassengerIdTextBox
         '
+        Me.TicketPassengerIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TicketPassengerIdTextBox.Location = New System.Drawing.Point(192, 47)
         Me.TicketPassengerIdTextBox.Name = "TicketPassengerIdTextBox"
-        Me.TicketPassengerIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TicketPassengerIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TicketPassengerIdTextBox.TabIndex = 8
         '
         'Label6
@@ -113,14 +95,15 @@ Partial Class UpdateTicketForm
         '
         'TicketTrainIdTextBox
         '
+        Me.TicketTrainIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TicketTrainIdTextBox.Location = New System.Drawing.Point(367, 47)
         Me.TicketTrainIdTextBox.Name = "TicketTrainIdTextBox"
-        Me.TicketTrainIdTextBox.Size = New System.Drawing.Size(129, 23)
+        Me.TicketTrainIdTextBox.Size = New System.Drawing.Size(129, 25)
         Me.TicketTrainIdTextBox.TabIndex = 10
         '
         'TicketDateTimePicker
         '
-        Me.TicketDateTimePicker.Location = New System.Drawing.Point(192, 108)
+        Me.TicketDateTimePicker.Location = New System.Drawing.Point(27, 108)
         Me.TicketDateTimePicker.Name = "TicketDateTimePicker"
         Me.TicketDateTimePicker.Size = New System.Drawing.Size(304, 23)
         Me.TicketDateTimePicker.TabIndex = 12
@@ -149,8 +132,6 @@ Partial Class UpdateTicketForm
         Me.Controls.Add(Me.TicketTrainIdTextBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TicketPassengerIdTextBox)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TicketFeeTextBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TicketIdTextBox)
@@ -168,8 +149,6 @@ Partial Class UpdateTicketForm
     Friend WithEvents TicketIdTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TicketFeeTextBox As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents TicketPassengerIdTextBox As TextBox
     Friend WithEvents Label6 As Label

@@ -24,13 +24,13 @@ Partial Class UpdatePassengerForm
     Private Sub InitializeComponent()
         Me.UpdateButton = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.PassengerGenderTextBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.PassengerNameTextBox = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PassengerAgeTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PassengerIdTextBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'UpdateButton
@@ -54,12 +54,13 @@ Partial Class UpdatePassengerForm
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Gender"
         '
-        'TextBox6
+        'PassengerGenderTextBox
         '
-        Me.TextBox6.Location = New System.Drawing.Point(79, 106)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(158, 23)
-        Me.TextBox6.TabIndex = 31
+        Me.PassengerGenderTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerGenderTextBox.Location = New System.Drawing.Point(79, 106)
+        Me.PassengerGenderTextBox.Name = "PassengerGenderTextBox"
+        Me.PassengerGenderTextBox.Size = New System.Drawing.Size(158, 25)
+        Me.PassengerGenderTextBox.TabIndex = 31
         '
         'Label5
         '
@@ -72,12 +73,13 @@ Partial Class UpdatePassengerForm
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Name"
         '
-        'TextBox5
+        'PassengerNameTextBox
         '
-        Me.TextBox5.Location = New System.Drawing.Point(284, 41)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(167, 23)
-        Me.TextBox5.TabIndex = 29
+        Me.PassengerNameTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerNameTextBox.Location = New System.Drawing.Point(284, 41)
+        Me.PassengerNameTextBox.Name = "PassengerNameTextBox"
+        Me.PassengerNameTextBox.Size = New System.Drawing.Size(167, 25)
+        Me.PassengerNameTextBox.TabIndex = 29
         '
         'Label3
         '
@@ -90,12 +92,13 @@ Partial Class UpdatePassengerForm
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "Age"
         '
-        'TextBox3
+        'PassengerAgeTextBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(284, 106)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(167, 23)
-        Me.TextBox3.TabIndex = 27
+        Me.PassengerAgeTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerAgeTextBox.Location = New System.Drawing.Point(284, 106)
+        Me.PassengerAgeTextBox.Name = "PassengerAgeTextBox"
+        Me.PassengerAgeTextBox.Size = New System.Drawing.Size(167, 25)
+        Me.PassengerAgeTextBox.TabIndex = 27
         '
         'Label1
         '
@@ -108,12 +111,13 @@ Partial Class UpdatePassengerForm
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "ID"
         '
-        'TextBox1
+        'PassengerIdTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(79, 41)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(158, 23)
-        Me.TextBox1.TabIndex = 25
+        Me.PassengerIdTextBox.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PassengerIdTextBox.Location = New System.Drawing.Point(79, 41)
+        Me.PassengerIdTextBox.Name = "PassengerIdTextBox"
+        Me.PassengerIdTextBox.Size = New System.Drawing.Size(158, 25)
+        Me.PassengerIdTextBox.TabIndex = 25
         '
         'UpdatePassengerForm
         '
@@ -125,13 +129,13 @@ Partial Class UpdatePassengerForm
         Me.ClientSize = New System.Drawing.Size(530, 234)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.PassengerGenderTextBox)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.PassengerNameTextBox)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.PassengerAgeTextBox)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.PassengerIdTextBox)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -145,11 +149,11 @@ Partial Class UpdatePassengerForm
 
     Friend WithEvents UpdateButton As Button
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents PassengerGenderTextBox As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents PassengerNameTextBox As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents PassengerAgeTextBox As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PassengerIdTextBox As TextBox
 End Class

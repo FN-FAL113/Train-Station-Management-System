@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub PassengerMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call load_data_to_datagrid("passenger", PassengerDataGridView)
+        Call load_data_to_datagrid("passenger", PassengerDataGridView, "")
     End Sub
 
     Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
@@ -32,6 +32,6 @@
     End Sub
 
     Private Sub RefreshPassengerButton_Click(sender As Object, e As EventArgs) Handles RefreshPassengerButton.Click
-        Call load_data_to_datagrid("passenger", PassengerDataGridView)
+        Call load_data_to_datagrid("passenger", PassengerDataGridView, "")
     End Sub
 End Class
