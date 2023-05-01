@@ -19,7 +19,6 @@ Source code for my output (incremental activity) on course subject: ```IT120: Ev
   <img src="https://user-images.githubusercontent.com/88238718/235411861-e6d2114c-866e-42e8-a998-2e5fe34db00b.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235411871-94484914-beec-444f-b572-0e515e4dbfcd.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235411925-c548402e-7e41-4620-999e-8b929c617f66.png" height=300 />
-  <img src="https://user-images.githubusercontent.com/88238718/235411822-fa2baca3-f601-485c-b912-f5ff0ebe2000.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235411956-3bbbe746-7bde-4578-a781-2f26e57f3fed.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235411971-2686fa99-c937-43f4-8ee7-59b2a39cfad0.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235412009-e67be296-e1a8-46df-bcf1-6e9f45799d0d.png" height=300 />
