@@ -6,8 +6,8 @@ Source code for my output (incremental activity) on course subject: ```IT120: Ev
 
 ## Currently Implemented Features:
 - Simple UI/IX design, organized by menus and forms
-- MySQL DB Connection handling
-- Table and View data displayed through a DataGridView control
+- MySQL Fat DB and Connection handling
+- Table and view data displayed through a DataGridView control
 - CRUD forms
 - Data loading, conversion and database backup
 - Report Generation using MS Excel
