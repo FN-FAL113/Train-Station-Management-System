@@ -12,7 +12,10 @@ Source code for my output (incremental activity) on course subject: ```IT120: Ev
 - Data loading, conversion and database backup
 - Report Generation using MS Excel
 
-# Screenshots
+## Disclaimer
+- SQL queries on this app is unsanitized and bind parameters was not used during the development due to tight project deadline. Always sanitize incoming inputs!
+
+## Screenshots
 <div>
   <img src="https://user-images.githubusercontent.com/88238718/235411822-fa2baca3-f601-485c-b912-f5ff0ebe2000.png" height=300 />
   <img src="https://user-images.githubusercontent.com/88238718/235411840-86aee79d-200a-4931-85bd-8dc6209fd8f8.png" height=300 />
